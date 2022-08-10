@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.content-navbar {
+  display: flex;
+  background: #2c2c2c;
+  width: max-content;
+  width: 100%;
+}
+
+.icon-sistem {
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.icon-sistem img {
+  width: 95%;
+  height: 95%;
+}
+
+.title-proyect {
+  color: white;
+  text-decoration: none;
+}
+
+.name-sistem {
+  margin-top: 22px;
+  margin-right: 12px;
+  font-size: 19px;
+}
+
+.button-menu {
+  border: none;
+  background: transparent;
+}

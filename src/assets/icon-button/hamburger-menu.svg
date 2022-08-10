@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21">
+        <path
+            id="Trazado_19"
+            data-name="Trazado 19"
+            d="M4.5,18h27"
+            transform="translate(-3 -7.5)"
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+        />
+        <path
+            id="Trazado_20"
+            data-name="Trazado 20"
+            d="M4.5,9h27"
+            transform="translate(-3 -7.5)"
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+        />
+        <path
+            id="Trazado_21"
+            data-name="Trazado 21"
+            d="M4.5,27h27"
+            transform="translate(-3 -7.5)"
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+        />
+</svg>
