@@ -1,9 +1,9 @@
 import React from "react";
 import isotipoPPP from "../assets/icons/isotipo-ppp.svg";
-import hambuergerMenu from "../assets/icon-button/hamburger-menu.svg";
 import "../style-components/header.css";
+import MenuNavbar from "../components/MenuNavbar";
 
-function Header() {
+function Header({ setEstateContet }) {
   return (
     <nav className="navbar">
       <div className="content-navbar">
@@ -15,9 +15,7 @@ function Header() {
             Sistema de Gestion de Practicas Pre profesionales
           </h2>
         </a>
-        <button className="button-menu">
-          <img src={hambuergerMenu} alt="" />
-        </button>
+        <MenuNavbar setEstateContet={setEstateContet} />
       </div>
     </nav>
   );

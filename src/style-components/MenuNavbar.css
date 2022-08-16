@@ -1,0 +1,42 @@
+.button-menu {
+  border: none;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  line-height: 75px;
+}
+
+.content-menu {
+  background-color: #2f4050;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.list-menu {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.list-menu .item-menu {
+  color: white;
+}
+
+.list-menu .item-menu:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.active {
+  transform: translate(-600px);
+}
+
+.opacity {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}

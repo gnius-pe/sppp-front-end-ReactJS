@@ -1,0 +1,13 @@
+.contenido {
+  position: absolute;
+  display: flex;
+  z-index: -2;
+  background-color: rebeccapurple;
+}
+
+.traslation-element {
+  transform: translate(400px);
+  transition: all 0.4s;
+}
+
+/* Your code */
