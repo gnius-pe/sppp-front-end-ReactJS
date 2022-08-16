@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
 }
@@ -32,9 +32,4 @@
   margin-top: 22px;
   margin-right: 12px;
   font-size: 19px;
-}
-
-.button-menu {
-  border: none;
-  background: transparent;
 }
