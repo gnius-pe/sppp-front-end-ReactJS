@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import "../style-page/Login.css";
 import ContentImageLogin from "../components/ContentImageLogin";
+import ModalLogin from "./ModalLogin";
 
 function Login() {
   const [estateContet, setEstateContet] = useState(true);
@@ -9,6 +10,7 @@ function Login() {
     <div className="container-login">
       <Header setEstateContet={setEstateContet} />
       <ContentImageLogin estateContet={estateContet} />
+      <ModalLogin />
     </div>
   );
 }
