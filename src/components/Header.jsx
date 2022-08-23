@@ -1,5 +1,6 @@
 import React from "react";
 import isotipoPPP from "../assets/icons/isotipo-ppp.svg";
+import iconlogin from "../assets/icons/icon-login.svg";
 import "../style-components/header.css";
 import MenuNavbar from "../components/MenuNavbar";
 
@@ -17,6 +18,14 @@ function Header({ setEstateContet }) {
         </a>
         <MenuNavbar setEstateContet={setEstateContet} />
       </div>
+      <div className="login-sistema" href="#">
+        <button className="ingresar">
+          <p>Ingresar</p>
+          <img className="icon-ingresar" src={iconlogin} alt="isotipo de login" />
+        </button>
+        <button className="crear-usuario">Crear Usuario</button>
+      </div>
+      
     </nav>
   );
 }
