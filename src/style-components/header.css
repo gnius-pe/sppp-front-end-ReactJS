@@ -52,12 +52,13 @@
 }
 
 .crear-usuario {
- 
+
   border: none;
   box-sizing: border-box;
   width: 100%;
   height: 40%;
   outline: none;
+  color: #2F4050;
 }
 
 .icon-ingresar {
