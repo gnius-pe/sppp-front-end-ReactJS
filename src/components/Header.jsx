@@ -4,7 +4,7 @@ import iconlogin from "../assets/icons/icon-login.svg";
 import "../style-components/header.css";
 import MenuNavbar from "../components/MenuNavbar";
 
-function Header({ setEstateContet }) {
+function Header({ setEstateContet, openModal }) {
   return (
     <nav className="navbar">
       <div className="content-navbar">
@@ -19,13 +19,16 @@ function Header({ setEstateContet }) {
         <MenuNavbar setEstateContet={setEstateContet} />
       </div>
       <div className="login-sistema" href="#">
-        <button className="ingresar">
+        <button className="ingresar" onClick={openModal}>
           <p>Ingresar</p>
-          <img className="icon-ingresar" src={iconlogin} alt="isotipo de login" />
+          <img
+            className="icon-ingresar"
+            src={iconlogin}
+            alt="isotipo de login"
+          />
         </button>
         <button className="crear-usuario">Crear Usuario</button>
       </div>
-      
     </nav>
   );
 }
