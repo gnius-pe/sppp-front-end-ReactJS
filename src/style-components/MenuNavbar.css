@@ -25,10 +25,10 @@
 
 .list-menu .item-menu {
   color: white;
+  text-decoration: none;
 }
 
 .list-menu .item-menu:hover {
-  background-color: aquamarine;
   color: black;
 }
 
@@ -40,3 +40,19 @@
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
 }
+
+.submenu{
+  color: white;
+  visibility: hidden;
+  list-style: none;
+}
+
+.submenu li a{
+  color: white;
+  text-decoration: none;
+}
+
+.list-menu li:hover .submenu{
+  visibility: visible;
+}
+

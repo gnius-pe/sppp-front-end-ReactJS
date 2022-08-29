@@ -17,14 +17,28 @@ function MenuNavbar({ setEstateContet }) {
 
   return (
     <div>
-      <button className="button-menu" onClick={handle}>
+      <button class="button-menu" onClick={handle}>
         <img src={hambuergerMenu} alt="" />
       </button>
-      <div className={`content-menu ${stateMenu ? "active" : ""}`}>
-        <ul className="list-menu">
-          <li className="item-menu">Home</li>
-          <li className="item-menu">About</li>
-          <li className="item-menu">Info</li>
+      <div class={`content-menu ${stateMenu ? "active" : ""}`}>
+        <ul class="list-menu">
+          <li><a href="#" class="item-menu">Reglamento de PPP</a></li><br /><br /><br />
+          <li><a href="#" class="item-menu">Organigrama Comision PPP</a></li><br /><br /><br />
+          <li><a href="#" class="item-menu">Descarga de Formatos</a>
+            <ul class="submenu">
+                <li><a href="#">Formato solicitud</a></li>
+                <li><a href="#">Formato aceptacion</a></li>
+                <li><a href="#">Formato F1</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="item-menu">Programa de Investigacion</a>
+            <ul class="submenu">
+              <li><a href="#">Tecnologias de la informacion</a></li>
+              <li><a href="#">Sistemas de informacion</a></li>
+              <li><a href="#">Ingienieria de software</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="item-menu">Estructura de Informe final</a></li>
         </ul>
       </div>
     </div>
