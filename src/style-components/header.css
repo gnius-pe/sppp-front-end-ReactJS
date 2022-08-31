@@ -49,8 +49,13 @@
   justify-content: center; 
   background-color: #2F4050;
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
+  transition: 0.1s;
 }
+.ingresar:hover{
+  background-color:rgba(74, 102, 128, 1);
+}
+
 
 .crear-usuario {
 
@@ -61,6 +66,10 @@
   outline: none;
   color: #2F4050;
   cursor: pointer;
+  transition: 0.1s;
+}
+.crear-usuario:hover{
+   background-color: rgba(193, 193, 193, 1); 
 }
 
 .icon-ingresar {
