@@ -49,6 +49,7 @@
   justify-content: center; 
   background-color: #2F4050;
   color: white;
+  cursor: pointer;
 }
 
 .crear-usuario {
@@ -59,6 +60,7 @@
   height: 40%;
   outline: none;
   color: #2F4050;
+  cursor: pointer;
 }
 
 .icon-ingresar {
