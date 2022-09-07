@@ -10,7 +10,6 @@ function Login() {
 
   const ingresarUsuario = () => {
     if (stateModal == true) {
-      console.log("entro");
       setstateModal(false);
     } else {
       setstateModal(true);
@@ -19,7 +18,6 @@ function Login() {
 
   const closeModalLogin = () => {
     if (stateModal == true) {
-      console.log("entro");
       setstateModal(false);
     } else {
       setstateModal(true);
@@ -29,7 +27,7 @@ function Login() {
   return (
     <div className="container-login">
       <Header setEstateContet={setEstateContet} openModal={ingresarUsuario} />
-      <ContentImageLogin estateContet={estateContet} />
+      <ContentImageLogin stateContet={estateContet} />
       <ModalLogin stateModal={stateModal} handlerCLose={closeModalLogin} />
     </div>
   );
