@@ -9,7 +9,7 @@
 .content-menu {
   background-color: #2f4050;
   box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.3);
-  width: 400px;
+  width: 300px;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -23,12 +23,16 @@
   list-style: none;
 }
 
+.list-menu li{
+  margin-left: 15px;
+}
+
 .list-menu .item-menu {
   color: white;
+  text-decoration: none;
 }
 
 .list-menu .item-menu:hover {
-  background-color: aquamarine;
   color: black;
 }
 
@@ -40,3 +44,19 @@
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
 }
+
+.submenu{
+  color: white;
+  /* visibility: hidden; */
+  list-style: none;
+}
+
+.submenu li a{
+  color: white;
+  text-decoration: none;
+}
+
+.list-menu li:hover .submenu{
+  /* visibility: visible; */
+}
+
