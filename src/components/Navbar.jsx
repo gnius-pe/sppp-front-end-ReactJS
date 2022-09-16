@@ -2,7 +2,7 @@ import React from "react";
 import isotipoPPP from "../assets/icons/isotipo-ppp.svg";
 import iconlogin from "../assets/icons/icon-login.svg";
 import "../style-components/header.css";
-import MenuNavbar from "../components/MenuNavbar";
+import MenuNavbar from "./MenuNavbar";
 
 function Header({ setEstateContet, openModal }) {
   return (

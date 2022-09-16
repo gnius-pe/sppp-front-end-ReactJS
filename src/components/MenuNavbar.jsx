@@ -23,11 +23,11 @@ function MenuNavbar({ setEstateContet }) {
 
   return (
     <div>
-      <button class="button-menu" onClick={handle}>
+      <button className="button-menu" onClick={handle}>
         <img src={hambuergerMenu} alt="" />
       </button>
-      <div class={`content-menu ${stateMenu ? "active" : ""}`}>
-        <ul class="list-menu">
+      <div className={`content-menu ${stateMenu ? "active" : ""}`}>
+        <ul className="list-menu">
           <li><img className="icon-menu" src={reglamentoIcon} alt="" /><a href="#" class="item-menu">Reglamento de PPP</a></li><br />
           <li><img className="icon-menu" src={organigramaIcon} alt="" /><a href="#" class="item-menu">Organigrama Comision PPP</a></li><br />
           <li><img className="icon-menu" src={descargaIcon} alt="" /><a href="#" class="item-menu">Descarga de Formatos  </a><img src={buttonDespliegue} alt="" />
@@ -44,7 +44,7 @@ function MenuNavbar({ setEstateContet }) {
               <li><a href="#">Ingienieria de software</a></li>
             </ul> */}
           </li><br />
-          <li><img src={estructuraIcon} alt="" /><a href="#" class="item-menu">Estructura de Informe final</a></li>
+          <li><img src={estructuraIcon} alt="" /><a href="#" className="item-menu">Estructura de Informe final</a></li>
         </ul>
       </div>
     </div>
