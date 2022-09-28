@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 
-import hambuergerMenu from "../assets/icon-button/hamburger-menu.svg";
-import "../style-components/MenuNavbar.css";
-import reglamentoIcon from "../assets/icons/icons-menu/icon-reglamento.svg";
-import organigramaIcon from "../assets/icons/icons-menu/icon-organigrama.svg";
-import descargaIcon from "../assets/icons/icons-menu/icon-descarga.svg";
-import investigacionIcon from "../assets/icons/icons-menu/icon-investigacion.svg";
-import estructuraIcon from "../assets/icons/icons-menu/icon-estructura.svg";
-import buttonDespliegue from "../assets/icon-button/icons-menu/flecha-despliegue.svg";
+import hambuergerMenu from "../../../../assets/icon-button/hamburger-menu.svg";
+import "../style-component-practicante/MenuNavbar.css";
+import reglamentoIcon from "../../../../assets/icons/icons-menu/icon-reglamento.svg";
+import organigramaIcon from "../../../../assets/icons/icons-menu/icon-organigrama.svg";
+import descargaIcon from "../../../../assets/icons/icons-menu/icon-descarga.svg";
+import investigacionIcon from "../../../../assets/icons/icons-menu/icon-investigacion.svg";
+import estructuraIcon from "../../../../assets/icons/icons-menu/icon-estructura.svg";
+import buttonDespliegue from "../../../../assets/icon-button/icons-menu/flecha-despliegue.svg";
 
-function MenuNavbar({ setEstateContet }) {
+function MenuNavbar() {
   const [stateMenu, setStateMenu] = useState(true);
   const handle = (event) => {
     if (stateMenu == true) {
       setStateMenu(false);
-      setEstateContet(false);
     } else {
       setStateMenu(true);
-      setEstateContet(true);
     }
   };
 
