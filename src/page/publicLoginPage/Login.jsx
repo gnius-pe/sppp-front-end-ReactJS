@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import "../style-page/Login.css";
-import ContentImageLogin from "../components/ContentImageLogin";
+import Header from "../../components/Navbar";
+import "../../page/publicLoginPage/style-page/Login.css";
+import ContentImageLogin from "../../components/ContentImageLogin";
 import ModalLogin from "./ModalLogin";
 
 function Login() {
