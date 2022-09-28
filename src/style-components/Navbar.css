@@ -33,11 +33,7 @@
   font-size: 19px;
 }
 
-.login-sistema {
-  
-}
-
-.ingresar {
+.login-sistema .ingresar {
   /* margin: 0px;
   padding: 0px; */
   border: none;
@@ -46,30 +42,28 @@
   height: 60%;
   text-align: center;
   display: flex;
-  justify-content: center; 
-  background-color: #2F4050;
+  justify-content: center;
+  background-color: #2f4050;
   color: white;
-  cursor: pointer; 
+  cursor: pointer;
   transition: 0.1s;
 }
-.ingresar:hover{
-  background-color:rgba(74, 102, 128, 1);
+.ingresar:hover {
+  background-color: rgba(74, 102, 128, 1);
 }
 
-
 .crear-usuario {
-
   border: none;
   box-sizing: border-box;
   width: 100%;
   height: 40%;
   outline: none;
-  color: #2F4050;
+  color: #2f4050;
   cursor: pointer;
   transition: 0.1s;
 }
-.crear-usuario:hover{
-   background-color: rgba(193, 193, 193, 1); 
+.crear-usuario:hover {
+  background-color: rgba(193, 193, 193, 1);
 }
 
 .icon-ingresar {
@@ -86,4 +80,3 @@
   margin-top: 10px;
   font-size: 16px;
 }
-

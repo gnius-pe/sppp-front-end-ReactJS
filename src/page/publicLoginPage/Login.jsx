@@ -3,6 +3,7 @@ import Header from "../../components/Navbar";
 import "../../page/publicLoginPage/style-page/Login.css";
 import ContentImageLogin from "../../components/ContentImageLogin";
 import ModalLogin from "./ModalLogin";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Login() {
   const [estateContet, setEstateContet] = useState(true);
