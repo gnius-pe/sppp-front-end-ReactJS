@@ -29,7 +29,7 @@ function MenuNavbar() {
           <li>
             <img className="icon-menu" src={reglamentoIcon} alt="" />
             <a href="#" className="item-menu">
-              Reglamento de PPP
+               Reglamento de PPP
             </a>
           </li>
           <br />
@@ -56,7 +56,7 @@ function MenuNavbar() {
           <li>
             <img className="icon-menu" src={investigacionIcon} alt="" />
             <a href="#" className="item-menu">
-              Programa de Investigacion{" "}
+            Programa de Investigacion{" "}
             </a>
             <img src={buttonDespliegue} alt="" />
             <br />

@@ -4,6 +4,9 @@ import "../style-component-practicante/NavbarPracticante.css";
 import MenuNavbar from "../componentPracticante/MenuNavbar";
 import xoosAvatar from "../../../../assets/avatar-user/xoos-avatar.jpg";
 import ModalUser from "./ModalUser";
+import BanderaIcon from "../../../../assets/icon-button/icons-navbar/icon-bandera.svg";
+import CampanaIcon from "../../../../assets/icon-button/icons-navbar/icon-campana.svg";
+import CasaIcon from "../../../../assets/icon-button/icons-navbar/icon-casa.svg";
 
 function NavbarPracticante() {
   const [stateOpenModalUser, setOpenModal] = useState(false);
@@ -46,6 +49,14 @@ function NavbarPracticante() {
       <div className="content-front">
         <div className="container-elements">
           <p className="texto-bienvenida">Bienvenido a SysPP-FIIS UNAS</p>
+          {/* Aqui voy a agregar */}
+          <img className="icon-casa" src={CasaIcon} alt="" />
+          <img className="icon-campana" src={CampanaIcon} alt="" />
+          <button className="button-progreso">
+          <p className="texto-progreso">Progreso</p>
+          <img className="icon-bandera" src={BanderaIcon} alt="" />
+          </button>
+          {/* Aqui va terminar */}
           <img
             className="avatar"
             src={xoosAvatar}
