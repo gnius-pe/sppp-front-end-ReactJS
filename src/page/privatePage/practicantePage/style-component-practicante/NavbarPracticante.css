@@ -46,3 +46,29 @@
 .container-elements .avatar:hover {
   border: 2px solid white;
 }
+
+.texto-progreso{
+  color: white;
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+.icon-casa{
+  margin-right: 14px;
+}
+
+.icon-campana{
+  margin-right: 14px;
+}
+
+.icon-bandera{
+  margin-right: 14px;
+}
+
+.button-progreso{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
