@@ -42,7 +42,6 @@ function Login() {
     } else {
       setStateModalRegistro(true);
     }
-    console.log(stateModalRegistro)
   };
 
 
