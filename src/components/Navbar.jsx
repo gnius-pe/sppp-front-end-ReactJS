@@ -4,7 +4,7 @@ import iconlogin from "../assets/icons/icon-login.svg";
 import "../style-components/Navbar.css";
 import MenuNavbar from "./MenuNavbar";
 
-function Navbar({ setEstateContet, openModal, openModalRegistro }) {
+function Navbar({ openModal, openModalRegistro }) {
   return (
     <nav className="navbar">
       <div className="content-navbar">

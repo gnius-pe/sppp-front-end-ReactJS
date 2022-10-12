@@ -9,7 +9,7 @@ import ModalRegistro from "./ModalRegistro";
 function Login() {
   const [estateContet, setEstateContet] = useState(true);
   const [stateModal, setstateModal] = useState(false);
-  const [stateModalRegistro, setStateModalRegistro] = useState(true);
+  const [stateModalRegistro, setStateModalRegistro] = useState(false);
 
   const ingresarUsuario = () => {
     if (stateModal == true) {
@@ -45,8 +45,12 @@ function Login() {
 
   return (
     <div className="container-login">
-      <Navbar openModal={ingresarUsuario} />
+      <Navbar openModal={ingresarUsuario} openModalRegistro={openRegistro} />
       <ModalLogin stateModal={stateModal} handlerCLose={closeModalLogin} />
+      <ModalRegistro
+        stateModalRegistro={stateModalRegistro}
+        handlerCLoseRegitro={closeModalRegistro}
+      ></ModalRegistro>
       <Routes>
         <Route
           path="/"

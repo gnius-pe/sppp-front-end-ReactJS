@@ -19,7 +19,7 @@
   width: 320px;
   height: 600px;
   border-radius: 20px;
-  background-color: rgba(47, 64, 80, 0.8);
+  background-color: rgba(47, 64, 80, 0.66);
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 .info-modal h3 {
@@ -78,24 +78,21 @@
   height: 27.8px;
   margin: 0;
   border: none;
-  
 }
 
 .property-data-login {
   margin: 0%;
   margin-bottom: 20px;
   display: flex;
-  
-
 }
 
-.style-type-user{
+.style-type-user {
   width: 115px;
   border-radius: 0% 0% 0% 0%;
 }
 
 .icon {
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   width: 21px;
   height: 30px;
   padding-left: 13px;
@@ -110,4 +107,24 @@
 .despliegue-icon {
   border-radius: 0px 8px 8px 0px;
   background-color: white;
+}
+
+.btn-ingresar {
+  text-decoration: none;
+  background-color: #293847;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+
+  transition: 0.2s;
+}
+
+.btn-ingresar:hover {
+  background-color: #1e2935;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  font-size: 23px;
 }
