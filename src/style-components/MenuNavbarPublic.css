@@ -4,8 +4,6 @@
   position: relative;
   cursor: pointer;
   line-height: 75px;
-  padding: 0;
-  margin-left: 15px;
 }
 
 .content-menu {
@@ -23,10 +21,6 @@
 .list-menu {
   padding: 100px 0px 20px 0px;
   list-style: none;
-}
-
-.list-menu li {
-  margin-left: 15px;
 }
 
 .list-menu .item-menu {

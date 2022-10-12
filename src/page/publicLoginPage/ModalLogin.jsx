@@ -18,24 +18,46 @@ function ModalLogin({ stateModal, handlerCLose }) {
           {/* Your code */}
           <div className="property-data-login">
             <img className="user-icon icon" src={iconUserCorreo} alt="" />
-            <input className="login-input" type="text" name="correo" id="correo"  placeholder="Correo institucional"/>
-          </div>
-          
-            
-          <div className="property-data-login">
-            <img className="password-icon icon" src={iconPassword} alt="" />
-            <input className="login-input" type="password" name="password" id="password" placeholder="Contraseña"/>
+            <input
+              className="login-input"
+              type="text"
+              name="correo"
+              id="correo"
+              placeholder="Correo institucional"
+            />
           </div>
 
           <div className="property-data-login">
-            <img className="tipousuario-icon icon" src={iconTipousuario} alt="" />
-            <input className="login-input style-type-user" type="text" name="type-user" id="type-user" placeholder="Tipo de Usuario"/>
-            <img className="despliegue-icon icon" src={iconDespliegue} alt="" />
-            
+            <img className="password-icon icon" src={iconPassword} alt="" />
+            <input
+              className="login-input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
           </div>
-          
+
+          <div className="property-data-login">
+            <img
+              className="tipousuario-icon icon"
+              src={iconTipousuario}
+              alt=""
+            />
+            <input
+              className="login-input style-type-user"
+              type="text"
+              name="type-user"
+              id="type-user"
+              placeholder="Tipo de Usuario"
+            />
+            <img className="despliegue-icon icon" src={iconDespliegue} alt="" />
+          </div>
+
           <div className="property-data-user">
-            <button><a href="practicante">Ingresar</a></button>
+            <a className="btn-ingresar" href="practicante/home">
+              Ingresar
+            </a>
           </div>
           {/* end your code :) */}
         </div>

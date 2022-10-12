@@ -4,6 +4,7 @@
   box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .content-navbar {
@@ -47,28 +48,34 @@
   border: 2px solid white;
 }
 
-.texto-progreso{
+/**
+*evita que se translade, mor las prpiedades de nAVlINK 
+ */
+.container-elements .active {
+  transform: none;
+}
+
+.texto-progreso {
   color: white;
   margin-right: 14px;
   font-size: 16px;
 }
 
-.icon-casa{
+.icon-casa {
   margin-right: 14px;
 }
 
-.icon-campana{
+.icon-campana {
   margin-right: 14px;
 }
 
-.icon-bandera{
+.icon-bandera {
   margin-right: 14px;
 }
 
-.button-progreso{
+.button-progreso {
   border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
 }
-
