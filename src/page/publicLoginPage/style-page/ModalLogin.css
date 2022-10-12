@@ -29,6 +29,9 @@
   margin-top: 16px;
   text-align: center;
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 
 .info-modal h3 {
@@ -70,3 +73,41 @@
 }
 
 /* your code :)  */
+.login-input {
+  border-radius: 0px 8px 8px 0px;
+  height: 27.8px;
+  margin: 0;
+  border: none;
+  
+}
+
+.property-data-login {
+  margin: 0%;
+  margin-bottom: 20px;
+  display: flex;
+  
+
+}
+
+.style-type-user{
+  width: 115px;
+  border-radius: 0% 0% 0% 0%;
+}
+
+.icon {
+  background-color: #E1E1E1;
+  width: 21px;
+  height: 30px;
+  padding-left: 13px;
+  border-radius: 8px 0px 0px 8px;
+  padding-right: 13px;
+  /* 
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); */
+}
+
+.despliegue-icon {
+  border-radius: 0px 8px 8px 0px;
+  background-color: white;
+}
