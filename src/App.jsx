@@ -8,7 +8,7 @@ function App() {
     <Router className="App">
       <Routes>
         <Route
-          path="/"
+          path="/*"
           element={
             <div>
               <Login />
@@ -16,7 +16,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/practicante"
+          path="/practicante/*"
           element={
             <div>
               <Practicante />

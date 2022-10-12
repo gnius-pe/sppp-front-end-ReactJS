@@ -4,19 +4,19 @@ import iconlogin from "../assets/icons/icon-login.svg";
 import "../style-components/Navbar.css";
 import MenuNavbar from "./MenuNavbar";
 
-function Header({ setEstateContet, openModal }) {
+function Navbar({ openModal }) {
   return (
     <nav className="navbar">
       <div className="content-navbar">
-        <a className="icon-sistem" href="#">
+        <a className="icon-sistem" href="/">
           <img src={isotipoPPP} alt="isotipo del sistema" />
         </a>
-        <a className="title-proyect" href="#">
+        <a className="title-proyect" href="/">
           <h2 className="name-sistem">
             Sistema de Gestion de Practicas Pre profesionales
           </h2>
         </a>
-        <MenuNavbar setEstateContet={setEstateContet} />
+        <MenuNavbar />
       </div>
       <div className="login-sistema" href="#">
         <button className="ingresar" onClick={openModal}>
@@ -33,4 +33,4 @@ function Header({ setEstateContet, openModal }) {
   );
 }
 
-export default Header;
+export default Navbar;

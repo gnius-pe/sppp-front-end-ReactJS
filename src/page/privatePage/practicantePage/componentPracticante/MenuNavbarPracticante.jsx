@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 
-import hambuergerMenu from "../assets/icon-button/hamburger-menu.svg";
-
-import reglamentoIcon from "../assets/icons/icons-menu/icon-reglamento.svg";
-import organigramaIcon from "../assets/icons/icons-menu/icon-organigrama.svg";
-import descargaIcon from "../assets/icons/icons-menu/icon-descarga.svg";
-import investigacionIcon from "../assets/icons/icons-menu/icon-investigacion.svg";
-import estructuraIcon from "../assets/icons/icons-menu/icon-estructura.svg";
-import buttonDespliegue from "../assets/icon-button/icons-menu/flecha-despliegue.svg";
+import hambuergerMenu from "../../../../assets/icon-button/hamburger-menu.svg";
+import "../style-component-practicante/MenuNavbarPracticante.css";
+import reglamentoIcon from "../../../../assets/icons/icons-menu/icon-reglamento.svg";
+import organigramaIcon from "../../../../assets/icons/icons-menu/icon-organigrama.svg";
+import descargaIcon from "../../../../assets/icons/icons-menu/icon-descarga.svg";
+import investigacionIcon from "../../../../assets/icons/icons-menu/icon-investigacion.svg";
+import estructuraIcon from "../../../../assets/icons/icons-menu/icon-estructura.svg";
+import buttonDespliegue from "../../../../assets/icon-button/icons-menu/flecha-despliegue.svg";
 import { NavLink } from "react-router-dom";
 
-function MenuNavbar() {
+function MenuNavbarPracticante() {
   const [stateMenu, setStateMenu] = useState(true);
   const [stateSubMenu, setSubMenu] = useState(false);
   const [stateSubMenuTow, setStateSubMenuTow] = useState(false);
+  const [stateMenuTree, setStateMenuTree] = useState(false);
 
   const handle = (event) => {
     if (stateMenu == true) {
@@ -45,6 +46,14 @@ function MenuNavbar() {
     }
   };
 
+  const handlerOpenSubMenuTree = () => {
+    if (stateMenuTree == true) {
+      setStateMenuTree(false);
+    } else {
+      setStateMenuTree(true);
+    }
+  };
+
   return (
     <div onClickCapture={handlerCaptureCursor}>
       <button className="button-menu" onClick={handle}>
@@ -54,7 +63,11 @@ function MenuNavbar() {
       <div className={`content-menu ${stateMenu ? "active-menu-lateral" : ""}`}>
         <ul className="lista-menu">
           <li className="opcion-menu">
-            <NavLink to="/reglamento-ppp" className="opcion" onClick={handle}>
+            <NavLink
+              to="/practicante/reglamento-ppp"
+              className="opcion"
+              onClick={handle}
+            >
               <img
                 className="icon-menu ajuste-icon"
                 src={reglamentoIcon}
@@ -65,7 +78,11 @@ function MenuNavbar() {
           </li>
           <br />
           <li className="opcion-menu">
-            <NavLink to="/organigrama-ppp" className="opcion" onClick={handle}>
+            <NavLink
+              to="/practicante/organigrama-ppp"
+              className="opcion"
+              onClick={handle}
+            >
               <img
                 className="icon-menu ajuste-icon"
                 src={organigramaIcon}
@@ -91,7 +108,7 @@ function MenuNavbar() {
               <li className="option-sub-menu">
                 <NavLink
                   className="elemento-sub-menu"
-                  to="/formato-solicitud"
+                  to="/practicante/formato-solicitud"
                   onClick={handle}
                 >
                   Formato solicitud
@@ -101,7 +118,7 @@ function MenuNavbar() {
               <li className="option-sub-menu">
                 <NavLink
                   className="elemento-sub-menu"
-                  to="/formato-aceptacion"
+                  to="/practicante/formato-aceptacion"
                   onClick={handle}
                 >
                   Formato aceptacion
@@ -112,7 +129,7 @@ function MenuNavbar() {
               <li className="option-sub-menu">
                 <NavLink
                   className="elemento-sub-menu"
-                  to="/formato-f1"
+                  to="/practicante/formato-f1"
                   onClick={handle}
                 >
                   Formato F1
@@ -136,21 +153,33 @@ function MenuNavbar() {
               className={`submenu ${stateSubMenuTow ? "" : "close-sub-menu"}`}
             >
               <li className="option-sub-menu">
-                <a className="elemento-sub-menu" href="#">
+                <NavLink
+                  className="elemento-sub-menu"
+                  to="/practicante/tecnologia-informacion"
+                  onClick={handle}
+                >
                   Tecnologias de la informacion
-                </a>
+                </NavLink>
               </li>
               <hr />
               <li className="option-sub-menu">
-                <a className="elemento-sub-menu" href="#">
+                <NavLink
+                  className="elemento-sub-menu"
+                  to="/practicante/sistema-informacion"
+                  onClick={handle}
+                >
                   Sistemas de informacion
-                </a>
+                </NavLink>
               </li>
               <hr />
               <li className="option-sub-menu">
-                <a className="elemento-sub-menu" href="#">
+                <NavLink
+                  className="elemento-sub-menu"
+                  to="/practicante/ingenieria-software"
+                  onClick={handle}
+                >
                   Ingienieria de software
-                </a>
+                </NavLink>
               </li>
               <hr />
             </ul>
@@ -158,7 +187,7 @@ function MenuNavbar() {
           <br />
           <li className="opcion-menu">
             <NavLink
-              to="/estructura-informe-final"
+              to="/practicante/estructura-informe-final"
               className="opcion"
               onClick={handle}
             >
@@ -172,10 +201,43 @@ function MenuNavbar() {
               </p>
             </NavLink>
           </li>
+          <br />
+          <li className={`opcion-menu ${stateMenuTree ? "style-submenu" : ""}`}>
+            <button
+              className="button-sub-menu"
+              onClick={handlerOpenSubMenuTree}
+            >
+              <img className="icon-menu" src={investigacionIcon} alt="" />
+              <p className="text-sub-menu text-menu">Mi practica</p>
+              <img src={buttonDespliegue} alt="" />
+            </button>
+            <ul className={`submenu ${stateMenuTree ? "" : "close-sub-menu"}`}>
+              <li className="option-sub-menu">
+                <NavLink
+                  className="elemento-sub-menu"
+                  to="/practicante/mi-practica"
+                  onClick={handle}
+                >
+                  Mi Practica Presentada
+                </NavLink>
+              </li>
+              <hr />
+              <li className="option-sub-menu">
+                <NavLink
+                  className="elemento-sub-menu"
+                  to="/practicante/mi-avance"
+                  onClick={handle}
+                >
+                  Mis Avances
+                </NavLink>
+              </li>
+              <hr />
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
   );
 }
 
-export default MenuNavbar;
+export default MenuNavbarPracticante;

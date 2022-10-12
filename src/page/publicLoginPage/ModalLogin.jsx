@@ -12,7 +12,9 @@ function ModalLogin({ stateModal, handlerCLose }) {
           <p>Sistema de Gestión de Prácticas Pre Profesionaleas</p>
           {/* Your code */}
           <div className="property-data-user">
-            <button><a href="practicante">Ingresar</a></button>
+            <button>
+              <a href="practicante/home">Ingresar</a>
+            </button>
           </div>
           {/* end your code :) */}
         </div>
