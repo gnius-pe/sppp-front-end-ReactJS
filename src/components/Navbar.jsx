@@ -4,7 +4,7 @@ import iconlogin from "../assets/icons/icon-login.svg";
 import "../style-components/Navbar.css";
 import MenuNavbar from "./MenuNavbar";
 
-function Header({ setEstateContet, openModal }) {
+function Navbar({ setEstateContet, openModal,openModalRegistro }) {
   return (
     <nav className="navbar">
       <div className="content-navbar">
@@ -27,10 +27,10 @@ function Header({ setEstateContet, openModal }) {
             alt="isotipo de login"
           />
         </button>
-        <button className="crear-usuario">Crear Usuario</button>
+        <button className="crear-usuario" onClick={openModalRegistro}>Crear Usuario</button>
       </div>
     </nav>
   );
 }
 
-export default Header;
+export default Navbar;
