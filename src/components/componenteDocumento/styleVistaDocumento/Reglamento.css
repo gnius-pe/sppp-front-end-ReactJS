@@ -29,3 +29,37 @@
   height: 100%;
   width: 75%;
 }
+
+
+.button-download {
+  background-color: #2F4050;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.link-down{
+  text-decoration: none;
+  color: white;
+}
+.reglamento-cabezera-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.cabezera-secundaria {
+  
+}
+
+.button-download {
+  height: 32px;
+  text-align: center;
+}
+
+.icon-down {
+  height: 16px;
+  margin-left: 5px;
+}
