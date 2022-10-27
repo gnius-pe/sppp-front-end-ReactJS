@@ -18,16 +18,16 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
             <input
               type="text"
               placeholder="Apellidos"
-              className="Apellidos-modal"
+              className="apellidos-modal"
             />
           </label>
         </div>
         <div className="cont-correo">
           <label htmlFor="">
             <input
-              type="texto"
+              type="text"
               placeholder="Correo Institucional"
-              className="Correo-modal"
+              className="correo-modal"
             />
             <br />
             <span>Ejemplo:alumno.apellido@unas.edu.pe</span>
@@ -37,7 +37,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
           <label htmlFor="">
             <input type="text" placeholder="Codigo" className="codigo-modal" />
             <br />
-            <span>Solo se aceptan numeros</span>
+            <span>Solo se aceptan números</span>
             <br />
           </label>
           <label htmlFor="">
