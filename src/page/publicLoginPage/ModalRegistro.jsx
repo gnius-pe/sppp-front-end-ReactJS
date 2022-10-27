@@ -6,7 +6,7 @@ function ModalRegistro({stateModalRegistro,handlerCLoseRegitro}){
             <div className="contenedor-inputs">
                 <button className="close" onClick={handlerCLoseRegitro}> X </button>
                 <h1 className="title-modal">Registrate</h1>
-                <span>Es rapido y facil.....</span>
+                <span>Es rapido y facil...</span>
                 <br/>
             <div />
             <div className="cont-nombreApellido">
