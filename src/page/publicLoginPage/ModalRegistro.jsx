@@ -11,19 +11,16 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
         <h1 className="title-modal">Registrate</h1>
         <span>Es rapido y facil...</span>
         <br />
-        <div />
-        <div className="cont-nombreApellido">
-          <input type="" placeholder="Nombres" className="nombres-modal" />
-          <label htmlFor="">
+        <div className="contenedor-cajas">
+          <div className="cont-nombreApellido">
+            <input type="" placeholder="Nombres" className="nombres-modal" />
             <input
               type="text"
               placeholder="Apellidos"
               className="apellidos-modal"
             />
-          </label>
-        </div>
-        <div className="cont-correo">
-          <label htmlFor="">
+          </div>
+          <label className="cont-correo" htmlFor="">
             <input
               type="text"
               placeholder="Correo Institucional"
@@ -31,24 +28,29 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
             />
             <br />
             <span>Ejemplo:alumno.apellido@unas.edu.pe</span>
-          </label>
-        </div>
-        <div>
-          <label htmlFor="">
-            <input type="text" placeholder="Codigo" className="codigo-modal" />
-            <br />
-            <span>Solo se aceptan números</span>
             <br />
           </label>
-          <label htmlFor="">
-            <input
-              type="text"
-              placeholder="Domicilio"
-              className="domicilio-modal"
-            />
-            <br />
-            <span>Direccion actual</span>
-          </label>
+          <div className="contenedor-codidomi">
+            <label htmlFor="">
+              <input
+                type="text"
+                placeholder="Codigo"
+                className="codigo-modal"
+              />
+              <br />
+              <span>Solo se aceptan números</span>
+              <br />
+            </label>
+            <label htmlFor="">
+              <input
+                type="text"
+                placeholder="Domicilio"
+                className="domicilio-modal"
+              />
+              <br />
+              <span>Direccion actual</span>
+            </label>
+          </div>
         </div>
       </div>
     </div>

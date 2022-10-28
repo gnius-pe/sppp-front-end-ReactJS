@@ -15,20 +15,23 @@
 }
 
 .contenedor-inputs {
-  width: 60%;
+  width: 700px;
   background-color: rgba(47, 64, 80, 0.8);
-  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
   height: 80%;
   border-radius: 20px;
 }
 
+.contenedor-cajas {
+}
+
 /* estilo para los imputs */
 .nombres-modal {
- border-radius: 19px;
- border-style: solid;
- height: 35px;
- width: 280px;
- font-size: 22px;
+  border-radius: 19px;
+  border-style: solid;
+  height: 35px;
+  width: 228px;
+  font-size: 22px;
 }
 
 .nombres-modal::placeholder {
@@ -40,66 +43,81 @@
 }
 
 .apellidos-modal {
- border-radius: 19px;
- border-style: solid;
- height: 35px;
- width: 280px;
- font-size: 22px;
+  border-radius: 19px;
+  border-style: solid;
+  height: 35px;
+  width: 377px;
+  font-size: 22px;
 }
 
-.apellidos-modal::placeholder{
-    color: #cccccc;
+.apellidos-modal::placeholder {
+  color: #cccccc;
 }
 
 .apellidos-modal:focus {
-    outline: none;
+  outline: none;
 }
 
 .correo-modal {
- border-radius: 19px;
- border-style: solid;
- height: 35px;
- width: 280px;
- font-size: 22px;
+  border-radius: 19px;
+  border-style: solid;
+  height: 35px;
+  width: 640px;
+  font-size: 22px;
+  margin-top: 47px;
+  margin-left: 29px;
 }
 
 .correo-modal::placeholder {
-    color: #cccccc;
+  color: #cccccc;
 }
 
 .correo-modal:focus {
-    outline: none;
+  outline: none;
 }
 
 .codigo-modal {
- border-radius: 19px;
- border-style: solid;
- height: 35px;
- width: 280px;
- font-size: 22px;
+  border-radius: 19px;
+  border-style: solid;
+  height: 35px;
+  width: 280px;
+  font-size: 22px;
 }
 
-.codigo-modal::placeholder{
-    color: #cccccc;
+.codigo-modal::placeholder {
+  color: #cccccc;
 }
 
-.codigo-modal:focus{
-    outline: none;
+.codigo-modal:focus {
+  outline: none;
 }
 
-.domicilio-modal{
- border-radius: 19px;
- border-style: solid;
- height: 35px;
- width: 280px;
- font-size: 22px;
+.domicilio-modal {
+  border-radius: 19px;
+  border-style: solid;
+  height: 35px;
+  width: 280px;
+  font-size: 22px;
 }
 
-.domicilio-modal::placeholder{
-    color: #cccccc;
+.domicilio-modal::placeholder {
+  color: #cccccc;
 }
 
-.domicilio-modal:focus{
-    outline: none;
+.domicilio-modal:focus {
+  outline: none;
 }
 /* fin de estilo para los inputs */
+
+.cont-nombreApellido {
+  display: flex;
+  gap: 25px;
+  margin-top: 23px;
+  margin-left: 29px;
+}
+.contenedor-codidomi {
+  margin-top: 46px;
+  display: flex;
+  gap: 12px;
+  margin-left: 29px;
+}
