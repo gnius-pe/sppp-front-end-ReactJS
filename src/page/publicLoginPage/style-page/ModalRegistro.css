@@ -121,3 +121,16 @@
   gap: 12px;
   margin-left: 29px;
 }
+.codigotexto {
+  margin-left: 5px;
+}
+.correotexto {
+  margin-left: 35px;
+}
+.domiciliotexto {
+  margin-left: 5px;
+}
+.mensaje {
+  margin-left: 32px;
+  display: flex;
+}

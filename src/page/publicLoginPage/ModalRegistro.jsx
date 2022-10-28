@@ -9,7 +9,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
           X{" "}
         </button>
         <h1 className="title-modal">Registrate</h1>
-        <span>Es rapido y facil...</span>
+        <span className="mensaje">Es rapido y facil...</span>
         <br />
         <div className="contenedor-cajas">
           <div className="cont-nombreApellido">
@@ -27,7 +27,9 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
               className="correo-modal"
             />
             <br />
-            <span>Ejemplo:alumno.apellido@unas.edu.pe</span>
+            <span className="correotexto">
+              Ejemplo:alumno.apellido@unas.edu.pe
+            </span>
             <br />
           </label>
           <div className="contenedor-codidomi">
@@ -38,7 +40,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
                 className="codigo-modal"
               />
               <br />
-              <span>Solo se aceptan números</span>
+              <span className="codigotexto">Solo se aceptan números</span>
               <br />
             </label>
             <label htmlFor="">
@@ -48,7 +50,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
                 className="domicilio-modal"
               />
               <br />
-              <span>Direccion actual</span>
+              <span className="domiciliotexto">Direccion actual</span>
             </label>
           </div>
         </div>
