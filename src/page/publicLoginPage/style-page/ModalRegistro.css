@@ -14,15 +14,20 @@
   display: flex;
 }
 
+.title-modal {
+  color: rgba(255, 255, 255, 1);
+  margin-left: 30px;
+  font-size: 50px;
+}
+.mensaje {
+  color: rgba(255, 255, 255, 1);
+}
 .contenedor-inputs {
-  width: 700px;
+  width: 632px;
   background-color: rgba(47, 64, 80, 0.8);
   box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
-  height: 80%;
+  height: 75%;
   border-radius: 20px;
-}
-
-.contenedor-cajas {
 }
 
 /* estilo para los imputs */
@@ -96,7 +101,7 @@
   border-radius: 19px;
   border-style: solid;
   height: 35px;
-  width: 280px;
+  width: 334px;
   font-size: 22px;
 }
 
@@ -116,21 +121,43 @@
   margin-left: 29px;
 }
 .contenedor-codidomi {
-  margin-top: 46px;
+  margin-top: 17px;
   display: flex;
   gap: 12px;
   margin-left: 29px;
 }
 .codigotexto {
   margin-left: 5px;
+  color: white;
 }
 .correotexto {
   margin-left: 35px;
+  color: white;
 }
 .domiciliotexto {
   margin-left: 5px;
+  color: white;
+  font-weight: lighter;
 }
 .mensaje {
-  margin-left: 32px;
+  margin-left: 33px;
+  display: flex;
+  margin-top: -22px;
+}
+.registrar-modal {
+  position: absolute;
+  width: 398px;
+  height: 63px;
+  background: #1e2f3e;
+  margin-left: 155px;
+  margin-top: 64px;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  font-size: 18px;
+}
+
+.contenedor-registrar {
+  margin-left: 23px;
   display: flex;
 }

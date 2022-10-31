@@ -8,8 +8,8 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
           {" "}
           X{" "}
         </button>
-        <h1 className="title-modal">Registrate</h1>
-        <span className="mensaje">Es rapido y facil...</span>
+        <h1 className="title-modal">Regístrate</h1>
+        <span className="mensaje">Es rápido y sencillo...</span>
         <br />
         <div className="contenedor-cajas">
           <div className="cont-nombreApellido">
@@ -23,7 +23,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
           <label className="cont-correo" htmlFor="">
             <input
               type="text"
-              placeholder="Correo Institucional"
+              placeholder=" Correo Institucional"
               className="correo-modal"
             />
             <br />
@@ -48,11 +48,14 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
                 type="text"
                 placeholder="Domicilio"
                 className="domicilio-modal"
-              />
-              <br />
+              ></input>
               <span className="domiciliotexto">Direccion actual</span>
             </label>
           </div>
+          <br />
+          <div className="contenedor-registrar"></div>
+          <button className="registrar-modal">REGISTRAR</button>
+          <br />
         </div>
       </div>
     </div>
