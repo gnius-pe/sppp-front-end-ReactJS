@@ -23,15 +23,55 @@
   color: rgba(255, 255, 255, 1);
 }
 .contenedor-inputs {
-  width: 632px;
+  width: 40%;
+  height: 60%;
   background-color: rgba(47, 64, 80, 0.8);
   box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
-  height: 75%;
   border-radius: 20px;
 }
 
-/* estilo para los imputs */
+.contenedor-cajas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.style-espacios-dos-input {
+  display: flex;
+  gap: 25px;
+  margin-top: 23px;
+  margin-left: 29px;
+}
+
+.style-espacios-un-input {
+  margin-top: 23px;
+  margin-left: 29px;
+}
+
+.item-contenedor-codidomi {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
 .nombres-modal {
+  border-style: solid;
+}
+
+.apellidos-modal {
+  border-style: solid;
+  height: 35px;
+  width: 100%;
+}
+
+.correo-modal {
+  border-style: solid;
+  height: 35px;
+  width: 100%;
+}
+
+/* estilo para los imputs */
+/* .nombres-modal {
   border-radius: 19px;
   border-style: solid;
   height: 35px;
@@ -111,10 +151,10 @@
 
 .domicilio-modal:focus {
   outline: none;
-}
+} */
 /* fin de estilo para los inputs */
 
-.cont-nombreApellido {
+/* .cont-nombreApellido {
   display: flex;
   gap: 25px;
   margin-top: 23px;
@@ -160,4 +200,4 @@
 .contenedor-registrar {
   margin-left: 23px;
   display: flex;
-}
+} */

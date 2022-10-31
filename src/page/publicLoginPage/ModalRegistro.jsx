@@ -12,7 +12,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
         <span className="mensaje">Es rápido y sencillo...</span>
         <br />
         <div className="contenedor-cajas">
-          <div className="cont-nombreApellido">
+          <div className="cont-nombreApellido style-espacios-dos-input">
             <input type="" placeholder="Nombres" className="nombres-modal" />
             <input
               type="text"
@@ -20,7 +20,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
               className="apellidos-modal"
             />
           </div>
-          <label className="cont-correo" htmlFor="">
+          <label className="cont-correo style-espacios-un-input" htmlFor="">
             <input
               type="text"
               placeholder=" Correo Institucional"
@@ -32,18 +32,17 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
             </span>
             <br />
           </label>
-          <div className="contenedor-codidomi">
-            <label htmlFor="">
+          <div className="contenedor-codidomi style-espacios-dos-input">
+            <label className="item-contenedor-codidomi" htmlFor="">
               <input
                 type="text"
                 placeholder="Codigo"
                 className="codigo-modal"
               />
-              <br />
               <span className="codigotexto">Solo se aceptan números</span>
               <br />
             </label>
-            <label htmlFor="">
+            <label className="item-contenedor-codidomi" htmlFor="">
               <input
                 type="text"
                 placeholder="Domicilio"
@@ -54,9 +53,9 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
           </div>
           <br />
           <div className="contenedor-registrar"></div>
-          <button className="registrar-modal">REGISTRAR</button>
           <br />
         </div>
+        <button className="registrar-modal">REGISTRAR</button>
       </div>
     </div>
   );
