@@ -41,11 +41,17 @@
   gap: 25px;
   margin-top: 23px;
   margin-left: 29px;
+  margin-right: 23px;
 }
 
 .style-espacios-un-input {
   margin-top: 23px;
   margin-left: 29px;
+  margin-right: 23px;
+}
+
+.contenedor-codidomi {
+  width: 100%;
 }
 
 .item-contenedor-codidomi {
@@ -65,6 +71,20 @@
 }
 
 .correo-modal {
+  border-style: solid;
+  height: 35px;
+  width: 98.5%;
+}
+
+.codigo-modal {
+  border-radius: 19px;
+  border-style: solid;
+  width: 100%;
+  height: 35px;
+}
+
+.domicilio-modal {
+  border-radius: 19px;
   border-style: solid;
   height: 35px;
   width: 100%;
