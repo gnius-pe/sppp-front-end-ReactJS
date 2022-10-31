@@ -9,47 +9,53 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
           X{" "}
         </button>
         <h1 className="title-modal">Regístrate</h1>
-        <span className="mensaje">Es rápido y sencillo...</span>
+        <span className="mensaje spam-style">Es rápido y sencillo...</span>
         <br />
         <div className="contenedor-cajas">
           <div className="cont-nombreApellido style-espacios-dos-input">
-            <input type="" placeholder="Nombres" className="nombres-modal" />
+            <input
+              type=""
+              placeholder="Nombres"
+              className="nombres-modal input-style-all"
+            />
             <input
               type="text"
               placeholder="Apellidos"
-              className="apellidos-modal"
+              className="apellidos-modal input-style-all"
             />
           </div>
           <div className="cont-correo style-espacios-un-input">
             <input
               type="text"
               placeholder=" Correo Institucional"
-              className="correo-modal"
+              className="correo-modal input-style-all"
             />
             <br />
-            <span className="correotexto">
+            <span className="correotexto spam-style">
               Ejemplo:alumno.apellido@unas.edu.pe
             </span>
-            <br />
           </div>
-          <div className="contenedor-codidomi style-espacios-dos-input">
-            <label className="item-contenedor-codidomi" htmlFor="">
+          <div className="contenedor-codidomi ">
+            <div className="item-contenedor-codidomi stily-input-code style-espacios-dos-input">
               <input
                 type="text"
                 placeholder="Codigo"
-                className="codigo-modal"
+                className="codigo-modal input-style-all"
               />
-              <span className="codigotexto">Solo se aceptan números</span>
-              <br />
-            </label>
-            <label className="item-contenedor-codidomi" htmlFor="">
+              <span className="codigotexto codidomi-style spam-style">
+                Solo se aceptan números
+              </span>
+            </div>
+            <div className="item-contenedor-codidomi stily-input-domicilio style-espacios-dos-input">
               <input
                 type="text"
                 placeholder="Domicilio"
-                className="domicilio-modal"
+                className="domicilio-modal input-style-all"
               ></input>
-              <span className="domiciliotexto">Direccion actual</span>
-            </label>
+              <span className="domiciliotexto codidomi-style spam-style">
+                Direccion actual
+              </span>
+            </div>
           </div>
           <br />
           <div className="contenedor-registrar"></div>
