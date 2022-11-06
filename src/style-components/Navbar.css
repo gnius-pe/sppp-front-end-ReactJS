@@ -33,9 +33,11 @@
   font-size: 19px;
 }
 
+.login-sistema{
+  height: 75px;
+}
+
 .login-sistema .ingresar {
-  /* margin: 0px;
-  padding: 0px; */
   border: none;
   font-size: 20px;
   width: 100%;
