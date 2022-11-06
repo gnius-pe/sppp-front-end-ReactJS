@@ -1,16 +1,17 @@
 import React from "react";
 import "./style-page/ModalRegistro.css";
+import closeModalRegistro from "../../assets/icon-button/close-2.svg";
 function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
   return (
     <div className={`contenedor ${stateModalRegistro ? "openMostrar" : ""}`}>
       <div className="contenedor-inputs">
-        <button className="close" onClick={handlerCLoseRegitro}>
-          {" "}
-          X{" "}
+        <button className="close-modal" onClick={handlerCLoseRegitro}>
+          <img src={closeModalRegistro} alt="" />
         </button>
-        <h1 className="title-modal">Regístrate</h1>
-        <span className="mensaje spam-style">Es rápido y sencillo...</span>
-        <br />
+        <div className="descripcion-modal">
+          <h1 className="title-modal">Regístrate</h1>
+          <span className="mensaje spam-style">Es rápido y sencillo...</span>
+        </div>
         <div className="contenedor-cajas">
           <div className="cont-nombreApellido style-espacios-dos-input">
             <input
