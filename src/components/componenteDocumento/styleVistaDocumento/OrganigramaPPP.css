@@ -1,3 +1,8 @@
+.page-organigrama{
+    position: absolute;
+    z-index: -2;
+}
+
 .organigrama {
     height: 420px;
     display: block;

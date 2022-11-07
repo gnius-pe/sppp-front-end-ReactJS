@@ -4,7 +4,7 @@ import organi from "../../../assets/organigrama/organigramaPPP.png";
 
 function OrganigramaPPP() {
   return (
-    <div>
+    <div className="page-organigrama">
       <dir className="laborPPP">
         <h3>
           {" "}
