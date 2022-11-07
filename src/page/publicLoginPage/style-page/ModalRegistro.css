@@ -14,9 +14,12 @@
   display: flex;
 }
 
+.maregin-inputs-all{
+  margin-left: 50px;
+}
+
 .title-modal {
   color: rgba(255, 255, 255, 1);
-  margin-left: 30px;
   font-size: 30px;
 }
 .mensaje {
@@ -40,9 +43,10 @@
   display: flex;
   gap: 10px;
   margin-top: 23px;
-  margin-left: 29px;
   margin-right: 23px;
 }
+
+
 
 .input-style-all {
   border-radius: 19px;
@@ -57,7 +61,7 @@
 
 .style-espacios-un-input {
   margin-top: 23px;
-  margin-left: 29px;
+  
   margin-right: 23px;
 }
 
@@ -86,5 +90,6 @@
 .close-modal {
   background-color: transparent;
   border: none;
+  height: 20px;
   margin: 10px;
 }
