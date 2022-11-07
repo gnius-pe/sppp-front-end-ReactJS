@@ -6,7 +6,7 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
     <div className={`contenedor ${stateModalRegistro ? "openMostrar" : ""}`}>
       <div className="contenedor-inputs">
         <button className="close-modal" onClick={handlerCLoseRegitro}>
-          <img src={closeModalRegistro} alt="" />
+          <img className="btn-img-close" src={closeModalRegistro} alt="" />
         </button>
         <div className="maregin-inputs-all">
           <div className="descripcion-modal">
