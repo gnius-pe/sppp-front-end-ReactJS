@@ -1,0 +1,13 @@
+.organigrama {
+    height: 420px;
+    display: block;
+
+    margin: auto;
+}
+
+.laborPPP {
+    color: rgb(00, 00, 00);
+        font-family: cursive;
+        text-shadow: 0px 370px 1.5px rgb(0, 0, 0);
+        text-align: center;
+}
