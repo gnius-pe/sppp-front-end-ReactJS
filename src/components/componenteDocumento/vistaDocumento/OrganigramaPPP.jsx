@@ -5,7 +5,14 @@ import organi from "../../../assets/organigrama/organigramaPPP.png";
 function OrganigramaPPP() {
   return (
     <div className="page-organigrama">
-      <dir className="laborPPP">
+      <div className="portada-organigrama">
+        <p>Comisión Prácticas Pre Profesionales</p>
+        <h1 className="text-organigrama">ORGANIGRAMA</h1>
+        <p>FIIS - UNAS</p>
+        {/* {<img className="organigrama" src={fiis} alt="" />} */}
+      </div>
+
+      <div className="laborPPP">
         <h3>
           {" "}
           La comisión de Prácticas Pre Profesionales, es la encargada de
@@ -14,10 +21,9 @@ function OrganigramaPPP() {
           que se desarrollan en los últimos años de estudios académicos, según
           currícula vigente.
         </h3>
-      </dir>
-      <div>
-        <img className="organigrama" src={organi} alt="" />
       </div>
+
+      <div>{<img className="organigrama" src={organi} alt="" />}</div>
     </div>
   );
 }
