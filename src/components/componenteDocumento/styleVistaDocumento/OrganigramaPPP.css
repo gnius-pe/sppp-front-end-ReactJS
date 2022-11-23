@@ -36,8 +36,9 @@
   /* background-image: url("../../../assets/organigrama/fiis.png"); */
 
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   clip-path: polygon(0% 0, 100% 0, 100% 90%, 60% 90%, 50% 100%, 40% 90%, 0 90%);
 
   display: flex;
