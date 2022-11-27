@@ -1,23 +1,123 @@
-.contenedor{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(243, 243, 243, 0.2);
-    backdrop-filter: blur(8px);
-    display: none;
-    position: fixed;
-    top: 0;
-    justify-content: center;
-    align-items: center;
+.contenedor {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 243, 243, 0.2);
+  backdrop-filter: blur(8px);
+  display: none;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.openMostrar{
-    display: flex;
+.openMostrar {
+  display: flex;
 }
 
 .contenedor-inputs {
-    width: 60%;
-    background-color: rgba(47, 64, 80, 0.8);
-    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
-    height: 80%;
-    border-radius: 20px;
+  width: 40%;
+  height: 60%;
+  background-color: rgba(47, 64, 80, 0.8);
+  box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
+  border-radius: 20px;
+}
+
+.maregin-inputs-all {
+  margin-left: 50px;
+  width: 100% - 50px;
+  height: 51vh;
+}
+
+.title-modal {
+  color: rgba(255, 255, 255, 1);
+  font-size: 30px;
+}
+.mensaje {
+  color: rgba(255, 255, 255, 1);
+}
+
+.contenedor-cajas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.style-espacios-dos-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 23px;
+  margin-right: 23px;
+}
+
+.input-style-all {
+  border-radius: 19px;
+  border-style: solid;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input-style-all:focus {
+  outline: none;
+}
+
+.style-espacios-un-input {
+  margin-top: 23px;
+
+  margin-right: 23px;
+}
+
+.contenedor-codidomi {
+  width: 100%;
+  display: flex;
+}
+
+.item-contenedor-codidomi {
+  font-size: 14px;
+  flex-direction: column;
+}
+
+.stily-input-code {
+  width: 30%;
+}
+
+.stily-input-domicilio {
+  width: 70%;
+}
+
+.spam-style {
+  color: white;
+}
+
+.close-modal {
+  background-color: transparent;
+  border: none;
+  height: 48px;
+  margin: 7px;
+}
+
+.btn-img-close {
+  height: 23px;
+}
+
+.pie-register {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+
+.registrar-modal {
+  margin-top: 30px;
+  width: 70%;
+  height: 50%;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  background-color: #2f4050;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.registrar-modal:hover {
+  box-shadow: 0 1px 2px 5px rgba(177, 177, 177, 0.2);
 }
