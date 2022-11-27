@@ -59,11 +59,10 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
                 </span>
               </div>
             </div>
-            <br />
-            <div className="contenedor-registrar"></div>
-            <br />
           </div>
-          <button className="registrar-modal">REGISTRAR</button>
+          <footer className="pie-register">
+            <button className="registrar-modal">REGISTRAR</button>
+          </footer>
         </div>
       </div>
     </div>
