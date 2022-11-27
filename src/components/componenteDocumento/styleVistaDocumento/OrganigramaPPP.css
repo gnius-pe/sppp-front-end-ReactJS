@@ -1,0 +1,72 @@
+.page-organigrama {
+  position: absolute;
+  z-index: -2;
+}
+
+.organigrama {
+  height: 420px;
+  display: block;
+
+  margin: auto;
+}
+
+.laborPPP {
+  color: rgb(00, 00, 00);
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin: 0px auto;
+}
+
+.page-organigrama {
+  text-align: center;
+}
+
+.portada-organigrama {
+  width: 100%;
+  position: relative;
+  height: 350px;
+
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cb5e048, #0000468e),
+    url("../../../assets/organigrama/fiis.png"); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cb5e05b, #0000468c),
+    url("../../../assets/organigrama/fiis.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: url("../../../assets/organigrama/fiis.png"); */
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 0, 100% 0, 100% 90%, 60% 90%, 50% 100%, 40% 90%, 0 90%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.portada-organigrama h1 {
+  font-size: 50px;
+  padding: 15px 0;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.text-organigrama {
+  display: table;
+}
+.text-organigrama::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.25s;
+}
+.text-organigrama:hover::after {
+  transform: scale(0.3, 1);
+}

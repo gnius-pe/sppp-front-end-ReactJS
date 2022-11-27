@@ -5,6 +5,9 @@ import ContentImageLogin from "../../components/ContentImageLogin";
 import ModalLogin from "./ModalLogin";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ModalRegistro from "./ModalRegistro";
+import Reglamento from "../../components/componenteDocumento/vistaDocumento/Reglamento";
+import EstructuraFinal from "../../components/componenteDocumento/vistaDocumento/EstructuraFinal";
+import OrganigramaPPP from "../../components/componenteDocumento/vistaDocumento/OrganigramaPPP";
 
 function Login() {
   const [estateContet, setEstateContet] = useState(true);
@@ -56,8 +59,11 @@ function Login() {
           path="/"
           element={<ContentImageLogin stateContet={estateContet} />}
         />
-        <Route path="/reglamento-ppp" element={<div>reglamento </div>} />
-        <Route path="/organigrama-ppp" element={<div>organigrama</div>} />
+        <Route path="/reglamento-ppp" element={<Reglamento />} />
+        <Route
+          path="/organigrama-ppp"
+          element={<OrganigramaPPP></OrganigramaPPP>}
+        />
         <Route
           path="/formato-solicitud"
           element={<div>Formato de solicitud</div>}
@@ -81,7 +87,7 @@ function Login() {
         />
         <Route
           path="/estructura-informe-final"
-          element={<div>Estructura del informe</div>}
+          element={<EstructuraFinal></EstructuraFinal>}
         />
       </Routes>
     </div>
