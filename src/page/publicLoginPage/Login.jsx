@@ -8,6 +8,7 @@ import ModalRegistro from "./ModalRegistro";
 import Reglamento from "../../components/componenteDocumento/vistaDocumento/Reglamento";
 import EstructuraFinal from "../../components/componenteDocumento/vistaDocumento/EstructuraFinal";
 import OrganigramaPPP from "../../components/componenteDocumento/vistaDocumento/OrganigramaPPP";
+import FormatoSolicitud from "../../components/componenteDocumento/vistaDocumento/FormatoSolicitud";
 
 function Login() {
   const [estateContet, setEstateContet] = useState(true);
@@ -66,7 +67,7 @@ function Login() {
         />
         <Route
           path="/formato-solicitud"
-          element={<div>Formato de solicitud</div>}
+          element={<FormatoSolicitud></FormatoSolicitud>}
         />
         <Route
           path="/formato-aceptacion"
