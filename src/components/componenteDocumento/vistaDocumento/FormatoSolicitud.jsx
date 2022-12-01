@@ -1,13 +1,13 @@
 import React from "react";
-import "../styleVistaDocumento/EstructuraFinal.css";
+import "../styleVistaDocumento/FormatoSolicitud.css";
 import iconDownload from "../../../assets/icons/icon-download.svg";
 
-function EstructuraFinal() {
+function FormatoSolicitud() {
   return (
-    <div className="contenedor-informe">
+    <div className="contenerdor-FSolicitud">
       <div className="estructura-cabezera-principal">
         <div className="cabezera-secundaria">
-          <h1>ESTRUCTURA FINAL DE PRÁCTICA</h1>
+          <h1>FORMATO DE SOLICITUD DE PRÁCTICAS PRE PROFESIONALES</h1>
           <p>/public</p>
         </div>
 
@@ -15,19 +15,18 @@ function EstructuraFinal() {
           {" "}
           <a
             className="link-down"
-            href="https://drive.google.com/u/0/uc?id=1VvwP2lEEA8nXwULkKoDjXpmrjK6Gl6rH&export=download"
+            href="https://drive.google.com/u/0/uc?id=1UrMTccVJ6-K0Pa4SsqRZp7FbqujjzrBK&export=download"
           >
             Descargar
             <img className="icon-down" src={iconDownload} alt="" />
           </a>
         </button>
       </div>
-
       <div className="contenedor-documento">
         <div className="contain-pdf">
           <iframe
             className="doc"
-            src="https://drive.google.com/file/d/1xrx_sA3eGTYS2mljkVLtd9bopJmdnRLH/preview"
+            src="https://drive.google.com/file/d/1UrMTccVJ6-K0Pa4SsqRZp7FbqujjzrBK/preview"
             height="100%"
             allow="autoplay"
           ></iframe>
@@ -36,4 +35,5 @@ function EstructuraFinal() {
     </div>
   );
 }
-export default EstructuraFinal;
+
+export default FormatoSolicitud;
