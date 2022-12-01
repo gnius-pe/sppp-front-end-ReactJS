@@ -10,82 +10,16 @@
   align-items: center;
 }
 
-.openMostrar {
-  display: flex;
-}
-
 .contenedor-inputs {
-  width: 40%;
-  height: 60%;
-  background-color: rgba(47, 64, 80, 0.8);
+  width: 600px;
+  height: 420px;
+  background-color: rgba(47, 64, 80, 0.7);
   box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
   border-radius: 20px;
 }
 
-.maregin-inputs-all {
-  margin-left: 50px;
-  width: 100% - 50px;
-  height: 51vh;
-}
-
-.title-modal {
-  color: rgba(255, 255, 255, 1);
-  font-size: 30px;
-}
-.mensaje {
-  color: rgba(255, 255, 255, 1);
-}
-
-.contenedor-cajas {
-  width: 100%;
+.openMostrar {
   display: flex;
-  flex-direction: column;
-}
-
-.style-espacios-dos-input {
-  display: flex;
-  gap: 10px;
-  margin-top: 23px;
-  margin-right: 23px;
-}
-
-.input-style-all {
-  border-radius: 19px;
-  border-style: solid;
-  font-size: 16px;
-  width: 100%;
-}
-
-.input-style-all:focus {
-  outline: none;
-}
-
-.style-espacios-un-input {
-  margin-top: 23px;
-
-  margin-right: 23px;
-}
-
-.contenedor-codidomi {
-  width: 100%;
-  display: flex;
-}
-
-.item-contenedor-codidomi {
-  font-size: 14px;
-  flex-direction: column;
-}
-
-.stily-input-code {
-  width: 30%;
-}
-
-.stily-input-domicilio {
-  width: 70%;
-}
-
-.spam-style {
-  color: white;
 }
 
 .close-modal {
@@ -93,31 +27,114 @@
   border: none;
   height: 48px;
   margin: 7px;
-}
-
-.btn-img-close {
-  height: 23px;
-}
-
-.pie-register {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 20%;
-}
-
-.registrar-modal {
-  margin-top: 30px;
-  width: 70%;
-  height: 50%;
-  border: none;
-  color: white;
-  border-radius: 6px;
-  background-color: #2f4050;
-  transition: 0.2s;
   cursor: pointer;
 }
 
-.registrar-modal:hover {
-  box-shadow: 0 1px 2px 5px rgba(177, 177, 177, 0.2);
+.btn-img-close {
+  height: 53%;
+}
+
+.titulo-modal {
+  margin-left: 4%;
+}
+
+.h1-titutlo {
+  color: white;
+  margin: 0;
+  font-size: 3vw;
+  font-weight: 1;
+}
+
+.p-sub-informacion {
+  color: white;
+  margin: 0;
+  font-size: 1vw;
+}
+
+.estilo-generico-elemento {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.estilo-input-general {
+  border: none;
+  border-radius: 12px;
+  height: 24px;
+  outline: none;
+  transition: 0.2s;
+}
+.estilo-input-general:hover {
+  box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+
+.form-inputs {
+}
+
+.input-nombre {
+  width: 35%;
+}
+
+.input-apellido {
+  width: 50%;
+}
+
+.estilo-correo {
+  width: 100%;
+}
+
+.input-correo {
+  width: 91%;
+}
+
+.ejemplo-correo {
+  color: white;
+  font-size: 12px;
+  margin: 0% 0% 0% 5%;
+}
+
+.margin-correo {
+  margin: 0;
+  padding: 0;
+}
+
+.estilo-duo {
+}
+
+.input-codigo {
+  width: 30%;
+}
+
+.input-direccion {
+  width: 55%;
+}
+
+.input-numero {
+  width: 41%;
+}
+
+.input-password {
+  width: 44%;
+}
+
+.pie-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-registrar {
+  width: 50%;
+  height: 37px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #293844;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.boton-registrar:hover {
+  box-shadow: 0 1px 1px 2px rgba(214, 214, 214, 0.2);
 }
