@@ -15,7 +15,7 @@ function FormatoSolicitud() {
           {" "}
           <a
             className="link-down"
-            href="https://drive.google.com/u/0/uc?id=1xrx_sA3eGTYS2mljkVLtd9bopJmdnRLH&export=download"
+            href="https://drive.google.com/u/0/uc?id=1UrMTccVJ6-K0Pa4SsqRZp7FbqujjzrBK&export=download"
           >
             Descargar
             <img className="icon-down" src={iconDownload} alt="" />
@@ -26,7 +26,7 @@ function FormatoSolicitud() {
         <div className="contain-pdf">
           <iframe
             className="doc"
-            src="https://drive.google.com/file/d/1xrx_sA3eGTYS2mljkVLtd9bopJmdnRLH/preview"
+            src="https://drive.google.com/file/d/1UrMTccVJ6-K0Pa4SsqRZp7FbqujjzrBK/preview"
             height="100%"
             allow="autoplay"
           ></iframe>
