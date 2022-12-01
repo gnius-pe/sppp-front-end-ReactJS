@@ -8,61 +8,63 @@ function ModalRegistro({ stateModalRegistro, handlerCLoseRegitro }) {
         <button className="close-modal" onClick={handlerCLoseRegitro}>
           <img className="btn-img-close" src={closeModalRegistro} alt="" />
         </button>
-        <div className="maregin-inputs-all">
-          <div className="descripcion-modal">
-            <h1 className="title-modal">Regístrate</h1>
-            <span className="mensaje spam-style">Es rápido y sencillo...</span>
-          </div>
-          <div className="contenedor-cajas">
-            <div className="cont-nombreApellido style-espacios-dos-input">
+        <div className="titulo-modal">
+          <h1 className="h1-titutlo">Registrate</h1>
+          <p className="p-sub-informacion">Es rapido y sencillo</p>
+        </div>
+        <form className="form-inputs" action="">
+          <p className="estilo-generico-elemento">
+            <input
+              className="input-nombre estilo-input-general"
+              type="text"
+              placeholder="Nombre"
+            />
+            <input
+              className="input-apellido estilo-input-general"
+              type="text"
+              placeholder="Apellidos"
+            ></input>
+          </p>
+          <div className="estilo-correo">
+            <p className="margin-correo estilo-generico-elemento">
               <input
-                type=""
-                placeholder="Nombres"
-                className="nombres-modal input-style-all"
-              />
-              <input
+                className="input-correo estilo-input-general"
                 type="text"
-                placeholder="Apellidos"
-                className="apellidos-modal input-style-all"
+                placeholder="Correo Institucional"
               />
-            </div>
-            <div className="cont-correo style-espacios-un-input">
-              <input
-                type="text"
-                placeholder=" Correo Institucional"
-                className="correo-modal input-style-all"
-              />
-              <br />
-              <span className="correotexto spam-style">
-                Ejemplo:alumno.apellido@unas.edu.pe
-              </span>
-            </div>
-            <div className="contenedor-codidomi ">
-              <div className="item-contenedor-codidomi stily-input-code style-espacios-dos-input">
-                <input
-                  type="text"
-                  placeholder="Codigo"
-                  className="codigo-modal input-style-all"
-                />
-                <span className="codigotexto codidomi-style spam-style">
-                  Solo se aceptan números
-                </span>
-              </div>
-              <div className="item-contenedor-codidomi stily-input-domicilio style-espacios-dos-input">
-                <input
-                  type="text"
-                  placeholder="Domicilio"
-                  className="domicilio-modal input-style-all"
-                ></input>
-                <span className="domiciliotexto codidomi-style spam-style">
-                  Direccion actual
-                </span>
-              </div>
-            </div>
+            </p>
+            <p className="ejemplo-correo">
+              Ejemplo: alumno.apellido@unas.edu.pe
+            </p>
           </div>
-          <footer className="pie-register">
-            <button className="registrar-modal">REGISTRAR</button>
-          </footer>
+          <p className="estilo-generico-elemento estilo-duo">
+            <input
+              type="text"
+              className="input-codigo estilo-input-general"
+              placeholder="Codigo"
+            />
+
+            <input
+              type="text"
+              className="input-direccion estilo-input-general"
+              placeholder="Domicilio Actual"
+            />
+          </p>
+          <p className="estilo-generico-elemento">
+            <input
+              type="text"
+              className="input-numero estilo-input-general"
+              placeholder="Numero Celular"
+            />
+            <input
+              type="password"
+              className="input-password estilo-input-general"
+              placeholder="Contraseña : solo 8 caracteres"
+            />
+          </p>
+        </form>
+        <div className="pie-modal">
+          <button className="boton-registrar">REGISTRAR</button>
         </div>
       </div>
     </div>
