@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import "../../page/publicLoginPage/style-page/Login.css";
 import ContentImageLogin from "../../components/ContentImageLogin";
+import Practicante from "../../page/privatePage/practicantePage/Practicante";
 import ModalLogin from "./ModalLogin";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ModalRegistro from "./ModalRegistro";
@@ -9,7 +10,7 @@ import Reglamento from "../../components/componenteDocumento/vistaDocumento/Regl
 import EstructuraFinal from "../../components/componenteDocumento/vistaDocumento/EstructuraFinal";
 import OrganigramaPPP from "../../components/componenteDocumento/vistaDocumento/OrganigramaPPP";
 
-function Login() {
+function Login({ ingresaSistemaAlumno, consultaUsuario }) {
   const [estateContet, setEstateContet] = useState(true);
   const [stateModal, setstateModal] = useState(false);
   const [stateModalRegistro, setStateModalRegistro] = useState(false);
@@ -49,7 +50,12 @@ function Login() {
   return (
     <div className="container-login">
       <Navbar openModal={ingresarUsuario} openModalRegistro={openRegistro} />
-      <ModalLogin stateModal={stateModal} handlerCLose={closeModalLogin} />
+      <ModalLogin
+        stateModal={stateModal}
+        handlerCLose={closeModalLogin}
+        ingresarSistema={ingresaSistemaAlumno}
+        alumno={consultaUsuario}
+      />
       <ModalRegistro
         stateModalRegistro={stateModalRegistro}
         handlerCLoseRegitro={closeModalRegistro}

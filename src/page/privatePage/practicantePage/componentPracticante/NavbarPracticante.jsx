@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import isotipoPPP from "../../../../assets/icons/isotipo-ppp.svg";
 import "../style-component-practicante/NavbarPracticante.css";
 import MenuNavbarPracticante from "../componentPracticante/MenuNavbarPracticante";
-import xoosAvatar from "../../../../assets/avatar-user/xoos-avatar.jpg";
+import xoosAvatar from "../../../../assets/avatar-user/avatar-default.svg";
 import ModalUser from "./ModalUser";
 import BanderaIcon from "../../../../assets/icon-button/icons-navbar/icon-bandera.svg";
 import CampanaIcon from "../../../../assets/icon-button/icons-navbar/icon-campana.svg";

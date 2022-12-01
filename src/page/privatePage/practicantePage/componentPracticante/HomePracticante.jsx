@@ -1,13 +1,19 @@
 import React from "react";
 import "../style-component-practicante/HomePracticante.css";
 import isotipoCasita from "../../../../assets/icons/isotipo-casita.svg";
-import xoos from "../../../../assets/avatar-user/xoos-avatar.jpg";
+import xoos from "../../../../assets/avatar-user/avatar-default.svg";
+
+import Cookies from "universal-cookie";
+import { useEffect } from "react";
+const cookies = new Cookies();
 
 function HomePracticante() {
   return (
     <div className="contenedor-practicante">
       <header className="nombre-practicante">
-        <h2>Kim Soo Yeon</h2>
+        <h2>
+          {cookies.get("nombre")} {cookies.get("apellido")}
+        </h2>
         <p>
           {" "}
           <img src={isotipoCasita} alt="" /> / Alumno
@@ -35,17 +41,17 @@ function HomePracticante() {
               <hr className="linea-punteada" />
               <span className="textN">
                 <p>Codigo Universitario:</p>{" "}
-                <p className="text-dinamico">0020222343</p>
+                <p className="text-dinamico">{cookies.get("codigo")}</p>
               </span>
               <hr className="linea-punteada" />
               <span className="textN">
                 <p>Correo Institucional:</p>{" "}
-                <p className="text-dinamico">kim.soo@unas.edu.pe</p>
+                <p className="text-dinamico">{cookies.get("email")}</p>
               </span>
               <hr className="linea-punteada" />
               <span className="textN">
                 <p>Linea de Investigacion:</p>{" "}
-                <p className="text-dinamico">INGENIERIA DE SOFTWARE</p>
+                <p className="text-dinamico">NO DEFINIDO</p>
               </span>
               <hr className="linea-punteada" />
             </section>

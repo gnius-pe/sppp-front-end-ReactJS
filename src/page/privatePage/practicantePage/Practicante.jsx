@@ -2,8 +2,17 @@ import React from "react";
 import NavbarPracticante from "./componentPracticante/NavbarPracticante";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePracticante from "./componentPracticante/HomePracticante";
+import Cookies from "universal-cookie";
+import { useEffect } from "react";
+const cookies = new Cookies();
 
-function PresentacionUser() {
+function Practicante() {
+  console.log(cookies.getAll());
+  useEffect(() => {
+    if (!cookies.get("id")) {
+      window.location.href = "/";
+    }
+  }, []);
   return (
     <div>
       <NavbarPracticante />
@@ -43,4 +52,4 @@ function PresentacionUser() {
   );
 }
 
-export default PresentacionUser;
+export default Practicante;

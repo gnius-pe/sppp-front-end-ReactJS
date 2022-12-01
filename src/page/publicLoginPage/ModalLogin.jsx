@@ -7,7 +7,16 @@ import iconPassword from "../../assets/icons/icon-password.svg";
 import iconTipousuario from "../../assets/icons/icon-tipousuario.svg";
 import iconDespliegue from "../../assets/icons/icon-despliegue.svg";
 
-function ModalLogin({ stateModal, handlerCLose }) {
+function ModalLogin({ stateModal, handlerCLose, ingresarSistema, alumno }) {
+  const ingresaCorreo = (event) => {
+    console.log(event.target.value);
+    alumno.email = event.target.value;
+  };
+
+  const ingresaPassword = (event) => {
+    alumno.password = event.target.value;
+  };
+
   return (
     <main className={`container-modal ${stateModal ? "open-modal" : ""}`}>
       <div className="modal">
@@ -24,6 +33,7 @@ function ModalLogin({ stateModal, handlerCLose }) {
               name="correo"
               id="correo"
               placeholder="Correo institucional"
+              onChange={ingresaCorreo}
             />
           </div>
 
@@ -35,6 +45,7 @@ function ModalLogin({ stateModal, handlerCLose }) {
               name="password"
               id="password"
               placeholder="Contraseña"
+              onChange={ingresaPassword}
             />
           </div>
 
@@ -55,9 +66,13 @@ function ModalLogin({ stateModal, handlerCLose }) {
           </div>
 
           <div className="property-data-user">
-            <a className="btn-ingresar" href="practicante/home">
+            <button
+              className="btn-ingresar"
+              onClick={ingresarSistema}
+              href="practicante/home"
+            >
               Ingresar
-            </a>
+            </button>
           </div>
           {/* end your code :) */}
         </div>
