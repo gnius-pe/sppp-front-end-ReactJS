@@ -9,6 +9,9 @@ import ModalRegistro from "./ModalRegistro";
 import Reglamento from "../../components/componenteDocumento/vistaDocumento/Reglamento";
 import EstructuraFinal from "../../components/componenteDocumento/vistaDocumento/EstructuraFinal";
 import OrganigramaPPP from "../../components/componenteDocumento/vistaDocumento/OrganigramaPPP";
+import FormatoSolicitud from "../../components/componenteDocumento/vistaDocumento/FormatoSolicitud";
+import FormatoAceptacion from "../../components/componenteDocumento/vistaDocumento/FormatoAceptacion";
+import FormatoF1 from "../../components/componenteDocumento/vistaDocumento/FormatoF1";
 
 function Login({ ingresaSistemaAlumno, consultaUsuario }) {
   const [estateContet, setEstateContet] = useState(true);
@@ -72,13 +75,13 @@ function Login({ ingresaSistemaAlumno, consultaUsuario }) {
         />
         <Route
           path="/formato-solicitud"
-          element={<div>Formato de solicitud</div>}
+          element={<FormatoSolicitud></FormatoSolicitud>}
         />
         <Route
           path="/formato-aceptacion"
-          element={<div>formato de aceptacion</div>}
+          element={<FormatoAceptacion></FormatoAceptacion>}
         />
-        <Route path="/formato-f1" element={<div>formato F1</div>} />
+        <Route path="/formato-f1" element={<FormatoF1></FormatoF1>} />
         <Route
           path="/tecnologia-informacion"
           element={<div>Tecnologia de la informacion</div>}
