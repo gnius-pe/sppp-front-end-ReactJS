@@ -12,12 +12,8 @@
     "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-router-dom": "^6.4.0",
     "universal-cookie": "^4.0.4"
-=======
-    "react-router-dom": "^6.4.4"
->>>>>>> ecca8f57d5afbe7b14333e3a551c527d86e90b72
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
