@@ -6,15 +6,62 @@ import iconUserCorreo from "../../assets/icons/icon-user.svg";
 import iconPassword from "../../assets/icons/icon-password.svg";
 import iconTipousuario from "../../assets/icons/icon-tipousuario.svg";
 import iconDespliegue from "../../assets/icons/icon-despliegue.svg";
+import { useState } from "react";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
-function ModalLogin({ stateModal, handlerCLose, ingresarSistema, alumno }) {
+function ModalLogin({ stateModal, handlerCLose}) {
+  const [user, setUser] = useState(null);
+  const [inputUsuario, setInputUsuario] = useState({
+    email: "",
+    password: "",
+    usuarioEncontrado: false,
+  });
+
+  const ingresarSistema = () => {
+    validaUsuarioAlumno(inputUsuario);
+  };
+
+  async function validaUsuarioAlumno(alumnoPorvalidar) {
+    const request = await fetch(
+      `https://valued-sight-irc22.rj.r.appspot.com/api/beta/alumno/sesion/${inputUsuario.email}/${inputUsuario.password}`,
+      {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const usuario = await request.json();
+    if (usuario.email != null) {
+      setUser(usuario);
+      inputUsuario.usuarioEncontrado = true;
+      console.log(user);
+      cookies.set("id", usuario.id, { path: "/practicante" });
+      cookies.set("nombre", usuario.nombre, { path: "/practicante" });
+      cookies.set("apellido", usuario.apellido, { path: "/practicante" });
+      cookies.set("email", usuario.email, { path: "/practicante" });
+      cookies.set("codigo", usuario.codigo, { path: "/practicante" });
+      cookies.set("direccionActual", usuario.direccionActual, {
+        path: "/practicante",
+      });
+      cookies.set("numeroCelular", usuario.numeroCelular, {
+        path: "/practicante",
+      });
+      window.location.href = "/practicante/home";
+    } else {
+      alert("usuario no encontrado");
+    }
+  }
+
   const ingresaCorreo = (event) => {
     console.log(event.target.value);
-    alumno.email = event.target.value;
+    inputUsuario.email = event.target.value;
   };
 
   const ingresaPassword = (event) => {
-    alumno.password = event.target.value;
+    inputUsuario.password = event.target.value;
   };
 
   return (

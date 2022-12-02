@@ -4,10 +4,10 @@ import isotipoCasita from "../../../../assets/icons/isotipo-casita.svg";
 import xoos from "../../../../assets/avatar-user/avatar-default.svg";
 
 import Cookies from "universal-cookie";
-import { useEffect } from "react";
 const cookies = new Cookies();
 
 function HomePracticante() {
+  console.log(cookies.getAll());
   return (
     <div className="contenedor-practicante">
       <header className="nombre-practicante">

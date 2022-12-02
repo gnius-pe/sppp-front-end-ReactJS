@@ -28,6 +28,17 @@
   height: 48px;
   margin: 7px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-modal:hover{
+  height: 49px;
+  margin: 9px;
+}
+
+.contenedor-boton-close{
+  display: flex;
+  justify-content: end;
 }
 
 .btn-img-close {
@@ -63,10 +74,11 @@
   height: 24px;
   outline: none;
   transition: 0.2s;
+  font-size: 16px;
 }
 .estilo-input-general:hover {
   box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.2);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .input-nombre {

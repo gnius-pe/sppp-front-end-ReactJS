@@ -13,7 +13,7 @@ import FormatoSolicitud from "../../components/componenteDocumento/vistaDocument
 import FormatoAceptacion from "../../components/componenteDocumento/vistaDocumento/FormatoAceptacion";
 import FormatoF1 from "../../components/componenteDocumento/vistaDocumento/FormatoF1";
 
-function Login({ ingresaSistemaAlumno, consultaUsuario }) {
+function Login() {
   const [estateContet, setEstateContet] = useState(true);
   const [stateModal, setstateModal] = useState(false);
   const [stateModalRegistro, setStateModalRegistro] = useState(false);
@@ -56,8 +56,6 @@ function Login({ ingresaSistemaAlumno, consultaUsuario }) {
       <ModalLogin
         stateModal={stateModal}
         handlerCLose={closeModalLogin}
-        ingresarSistema={ingresaSistemaAlumno}
-        alumno={consultaUsuario}
       />
       <ModalRegistro
         stateModalRegistro={stateModalRegistro}
