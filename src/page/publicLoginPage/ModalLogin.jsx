@@ -10,7 +10,7 @@ import { useState } from "react";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
-function ModalLogin({ stateModal, handlerCLose}) {
+function ModalLogin({ stateModal, handlerCLose }) {
   const [user, setUser] = useState(null);
   const [inputUsuario, setInputUsuario] = useState({
     email: "",
@@ -27,6 +27,7 @@ function ModalLogin({ stateModal, handlerCLose}) {
       `https://valued-sight-irc22.rj.r.appspot.com/api/beta/alumno/sesion/${inputUsuario.email}/${inputUsuario.password}`,
       {
         method: "GET",
+        mode: "cors",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
