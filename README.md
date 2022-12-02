@@ -2,7 +2,7 @@
 
 # React Sistema de practicas pre profesionales
 
-[![reactjs.jpg](https://i.postimg.cc/kgXMvVDJ/reactjs.jpg)](https://postimg.cc/JGvW1zbv)
+[![Captura-de-pantalla-2022-12-02-115228.jpg](https://i.postimg.cc/XqmKkMk3/Captura-de-pantalla-2022-12-02-115228.jpg)](https://postimg.cc/Mf0jzFLr)
 
 ## Setup
 
