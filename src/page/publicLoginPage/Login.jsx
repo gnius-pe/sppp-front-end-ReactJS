@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import "../../page/publicLoginPage/style-page/Login.css";
 import ContentImageLogin from "../../components/ContentImageLogin";
+import Practicante from "../../page/privatePage/practicantePage/Practicante";
 import ModalLogin from "./ModalLogin";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ModalRegistro from "./ModalRegistro";
@@ -52,7 +53,10 @@ function Login() {
   return (
     <div className="container-login">
       <Navbar openModal={ingresarUsuario} openModalRegistro={openRegistro} />
-      <ModalLogin stateModal={stateModal} handlerCLose={closeModalLogin} />
+      <ModalLogin
+        stateModal={stateModal}
+        handlerCLose={closeModalLogin}
+      />
       <ModalRegistro
         stateModalRegistro={stateModalRegistro}
         handlerCLoseRegitro={closeModalRegistro}
