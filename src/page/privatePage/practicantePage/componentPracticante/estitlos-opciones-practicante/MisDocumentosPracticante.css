@@ -5,6 +5,7 @@
   display: flex;
   position: absolute;
   flex-direction: column;
+  z-index: -2;
 }
 
 .cabezera-contenedor-mis-documento {
