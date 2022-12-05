@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePracticante from "./componentPracticante/HomePracticante";
 import Cookies from "universal-cookie";
 import { useEffect } from "react";
+import MisDocumentos from "./componentPracticante/opciones-practicante/MisDocumentos";
 const cookies = new Cookies();
 
 function Practicante() {
@@ -41,7 +42,7 @@ function Practicante() {
           path="/ingenieria-software"
           element={<div>Ingenieria de software</div>}
         ></Route>
-        <Route path="/mi-practica" element={<div>Mi practica</div>}></Route>
+        <Route path="/mi-practica" element={<MisDocumentos />}></Route>
         <Route path="/mi-avance" element={<div>Mi avance</div>}></Route>
         <Route
           path="/estructura-informe-final"

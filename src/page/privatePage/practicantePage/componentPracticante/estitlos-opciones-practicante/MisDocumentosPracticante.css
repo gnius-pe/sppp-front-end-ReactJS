@@ -1,0 +1,47 @@
+.contenedor-mis-documentos {
+  width: 100%;
+  height: 100%;
+  background-color: #9e9e9e28;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.cabezera-contenedor-mis-documento {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+.dos-secciones {
+  background-color: red;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.seccionSolicitud {
+  background-color: aquamarine;
+  width: 50%;
+  height: 100%;
+}
+
+.seccionFormatoF1 {
+  background-color: seagreen;
+  width: 50%;
+  height: 100%;
+}
+
+.seccion-debajo {
+  width: 100%;
+  height: 50%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+.seccionCartaCeptacion {
+  background-color: rebeccapurple;
+  width: 50%;
+  height: 100%;
+}
