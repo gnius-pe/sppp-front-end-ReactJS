@@ -14,34 +14,36 @@
 }
 
 .dos-secciones {
-  background-color: red;
   width: 100%;
   height: 50%;
   display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
 }
 
 .seccionSolicitud {
   background-color: aquamarine;
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
 }
 
 .seccionFormatoF1 {
   background-color: seagreen;
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
 }
 
 .seccion-debajo {
   width: 100%;
   height: 50%;
-  background-color: blue;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .seccionCartaCeptacion {
   background-color: rebeccapurple;
   width: 50%;
-  height: 100%;
+  height: 90%;
 }
