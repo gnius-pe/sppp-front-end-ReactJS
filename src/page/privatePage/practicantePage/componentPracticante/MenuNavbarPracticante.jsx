@@ -218,7 +218,7 @@ function MenuNavbarPracticante() {
                   to="/practicante/mi-practica"
                   onClick={handle}
                 >
-                  Mi Practica Presentada
+                  Mis Documentos
                 </NavLink>
               </li>
               <hr />

@@ -1,9 +1,6 @@
-.button-menu {
+.boton-menu-publico {
+  background-color: transparent;
   border: none;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  line-height: 75px;
 }
 
 .content-menu {

@@ -1,0 +1,98 @@
+.navbar-publico {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 62px;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ########## */
+.content-navbar-publico {
+  display: flex;
+
+  align-items: center;
+  margin-left: 1%;
+  gap: 8px;
+}
+
+.icono-sistema {
+  margin: 0;
+}
+
+.imgen-navbar {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.name-sistem-response {
+  display: none;
+}
+
+.title-proyect {
+  text-decoration: none;
+}
+
+.name-sistem {
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+}
+/* ########### */
+
+/* %%%%%%%%%%%%%%%%%%% */
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  height: 100%;
+  width: 140px;
+}
+
+.boton-ingresar {
+  background-color: #2f4050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  color: white;
+  height: 60%;
+}
+
+.boton-ingresar p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.boton-ingresar img {
+  margin: 0;
+  height: 16px;
+  width: 16px;
+}
+
+.crear-usuario {
+  height: 40%;
+  border: none;
+}
+/* %%%%%%%%%%%%%%%%%%% */
+
+/* Responsivo */
+@media screen and (max-width: 480px) {
+  .name-sistem {
+    display: none;
+  }
+
+  .name-sistem-response {
+    display: inline;
+    color: white;
+    font-weight: lighter;
+  }
+
+  .icono-sistema img {
+    width: 35px;
+    height: 35px;
+  }
+}
