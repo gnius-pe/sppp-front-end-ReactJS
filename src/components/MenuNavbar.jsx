@@ -8,6 +8,8 @@ import descargaIcon from "../assets/icons/icons-menu/icon-descarga.svg";
 import investigacionIcon from "../assets/icons/icons-menu/icon-investigacion.svg";
 import estructuraIcon from "../assets/icons/icons-menu/icon-estructura.svg";
 import buttonDespliegue from "../assets/icon-button/icons-menu/flecha-despliegue.svg";
+import "../style-components/MenuNavbarPublic.css";
+
 import { NavLink } from "react-router-dom";
 
 function MenuNavbar() {
@@ -47,7 +49,7 @@ function MenuNavbar() {
 
   return (
     <div onClickCapture={handlerCaptureCursor}>
-      <button className="button-menu" onClick={handle}>
+      <button className="boton-menu-publico" onClick={handle}>
         <img src={hambuergerMenu} alt="" />
       </button>
       <div className={`font${stateMenu ? "desactive-font" : ""}`}></div>
