@@ -48,12 +48,16 @@ function MenuNavbar() {
   };
 
   return (
-    <div onClickCapture={handlerCaptureCursor}>
+    <div className="menu-usuario-publico" onClickCapture={handlerCaptureCursor}>
       <button className="boton-menu-publico" onClick={handle}>
         <img src={hambuergerMenu} alt="" />
       </button>
-      <div className={`font${stateMenu ? "desactive-font" : ""}`}></div>
-      <div className={`content-menu ${stateMenu ? "active-menu-lateral" : ""}`}>
+      <div className={`font ${stateMenu ? "desactive-font" : ""}`}></div>
+      <div
+        className={`content-menu-public ${
+          stateMenu ? "active-menu-lateral-public" : ""
+        }`}
+      >
         <ul className="lista-menu">
           <li className="opcion-menu">
             <NavLink to="/reglamento-ppp" className="opcion" onClick={handle}>
