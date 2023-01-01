@@ -26,7 +26,8 @@ function MenuNavbar() {
   };
 
   const handlerCaptureCursor = (event) => {
-    if (event.target.className == "font") {
+    if (event.target.className == "font-public") {
+      console.log("entro")
       stateMenu ? setStateMenu(false) : setStateMenu(true);
     }
   };
@@ -52,7 +53,7 @@ function MenuNavbar() {
       <button className="boton-menu-publico" onClick={handle}>
         <img src={hambuergerMenu} alt="" />
       </button>
-      <div className={`font ${stateMenu ? "desactive-font" : ""}`}></div>
+      <div className={`font-public ${stateMenu ? "desactive-font-public" : ""}`}></div>
       <div
         className={`content-menu-public ${
           stateMenu ? "active-menu-lateral-public" : ""

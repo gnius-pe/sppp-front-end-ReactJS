@@ -53,6 +53,21 @@
   text-decoration: none;
 }
 
+
+
+.desactive-font-public {
+  visibility: hidden;
+}
+
+.font-public {
+  position: absolute;
+  width: 100%;
+  height: 92%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translate(-509px);
+}
+
 .list-menu li:hover .submenu {
   /* visibility: visible; */
 }
