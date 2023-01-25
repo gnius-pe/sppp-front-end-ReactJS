@@ -1,2 +1,47 @@
 #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container-page-public{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+ul{
+    padding: 0;
+    color: white;
+}
+
+li{
+    list-style: none;
+    color: white;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+aside{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
 }
