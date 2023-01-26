@@ -1,6 +1,6 @@
 import "./App.css";
-import Login from "./page/publicLoginPage/Login.jsx";
 import Practicante from "./page/privatePage/practicantePage/Practicante";
+import PagePublic from "./infrastructure/page/public/page-public/PagePublic";
 
 import {
   BrowserRouter as Router,
@@ -11,20 +11,16 @@ import {
   NavLink,
 } from "react-router-dom";
 
-
 function App() {
-
-
   return (
-    <Router className="App">
+    <Router className="app">
       <Routes>
         <Route
           path="/*"
           index
           element={
-            <div>
-              <Login
-              />
+            <div className="container-page-public">
+              <PagePublic />
             </div>
           }
         ></Route>

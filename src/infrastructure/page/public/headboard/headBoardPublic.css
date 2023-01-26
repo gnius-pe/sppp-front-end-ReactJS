@@ -1,0 +1,98 @@
+.header-style-public{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    
+}
+.header-page-public{
+    background-color: #2C2C2C;
+    height: 43px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    
+}
+
+.title-information-details{
+    background-color: #9e9e9e;
+    height: 70px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.274);
+}
+
+.isotipo-img-ppp-public{
+    width: 30px;
+}
+
+.buton-title-style-public{
+    display: flex;
+    align-items: center;
+    height: 43px;
+    gap: 3px;
+}
+
+.login-button-sistem-style{
+    background-color: #2F4050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 90px;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-button-sistem-style:hover{
+    background-color: #395066;
+}
+
+.icon-login-button-style{
+    width: 20px;
+}
+
+.texto-in-button-style{
+    font-size: 15px;
+}
+
+.name-system-style{
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.alternative-name-system-style{
+    display: none;
+    font-size: 23px;
+    color: rgb(199, 199, 199);
+}
+
+.title-head-public{
+    font-weight: 100;
+    padding-top: 10px;
+    margin-left: 26px;
+}
+.sub-tutle-head-public{
+    margin-left: 26px;
+    color: rgb(46, 46, 46);
+}
+
+@media (max-width:700px) {
+    .name-system-style{
+        display: none;
+    }
+
+    .alternative-name-system-style{
+        display: flex;
+    }
+
+    .title-head-public{
+        font-size: 20px;
+    }
+
+    .sub-tutle-head-public{
+        font-size: 14px;
+    }
+}
+
