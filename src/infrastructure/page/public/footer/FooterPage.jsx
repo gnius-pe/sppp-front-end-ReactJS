@@ -10,9 +10,8 @@ function FooterPage() {
       </div>
       <div>
         <h2 className="universidad-name-footer">Universidad Nacional Agraria de la Selva</h2>
-        <p className="alternative-ubicacion-footer">UNAS</p>
+        <p className="alternative-universidad-name-footer">UNAS</p>
         <p className="ubication-footer">UNAS/Tingo Maria</p>
-        
       </div>
     </div>
   );

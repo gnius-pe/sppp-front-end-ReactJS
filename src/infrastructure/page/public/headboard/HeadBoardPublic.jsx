@@ -26,9 +26,9 @@ function HeadBoardPublic() {
             />
           </NavLink>
           <NavLink to="/">
-            <p className="name-system-style">
+            <h2 className="name-system-style">
               Sistema de Practicas Preprofesionales
-            </p>
+            </h2>
             <p className="alternative-name-system-style">SPPP</p>
           </NavLink>
         </div>
