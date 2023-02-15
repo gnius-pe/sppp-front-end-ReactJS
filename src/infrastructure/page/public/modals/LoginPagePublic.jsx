@@ -35,13 +35,13 @@ function LoginPagePublic({ handleCloseModalLogin, stateModal  }) {
           </div>
           <form className="form-inputs-public">
             <h1 className="title-modal-login style-presentacion-static">
-              INICIAR SESSION
+              INICIAR SESIÓN
             </h1>
             <br />
             <img className="avatar-for-login" src={avatarUserDefault} alt="" />
             <br />
             <p className="style-presentacion-static">
-              Es bueno verte nuevamente !{" "}
+              Es bueno verte otra vez !{" "}
             </p>
             <br />
             <div className="container-inputs-email-password">
@@ -53,7 +53,7 @@ function LoginPagePublic({ handleCloseModalLogin, stateModal  }) {
                 <input
                   type="email"
                   className="input-email style-input-comun"
-                  placeholder="Ingrese su correo"
+                  placeholder="Ingresa tu correo"
                 />
               </div>
               <br />
@@ -65,7 +65,7 @@ function LoginPagePublic({ handleCloseModalLogin, stateModal  }) {
                 <input
                   type="password"
                   className="input-password style-input-comun"
-                  placeholder="Ingrese su contraseña"
+                  placeholder="Ingresa tu contraseña"
                 />
               </div>
             </div>
