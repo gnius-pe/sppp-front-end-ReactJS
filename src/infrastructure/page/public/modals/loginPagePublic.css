@@ -1,0 +1,151 @@
+.fondo-login-page{
+    position: fixed;
+    background-color: rgba(0, 17, 24, 0.281);
+    backdrop-filter: blur(6px);
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.modal-login-page-public{
+    background-color: #35485ae1;
+    display: flex;
+    height: 600px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.close-modal-login{
+    display: none;
+}
+
+.port-login-public{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.img-modal-login-public{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container-inputs-public{
+    width: 50%;
+    height: 100%;
+}
+
+.head-login{
+    display: flex;
+    justify-content: end;
+}
+
+.buton-close-login-public{
+    border-radius: 100%;
+    transition: 0.2s;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Estilo a los inputs del modal */
+
+.form-inputs-public{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buton-close-login-public:hover{
+    background-color: rgba(206, 206, 206, 0.281);
+}
+
+.buton-close-login-public img {
+    width: 20px;
+    height: 26px;
+}
+
+.title-modal-login{
+    font-weight: 100;
+}
+
+.style-presentacion-static{
+    color: blanchedalmond;
+}
+.avatar-for-login{
+    height: 100px;
+}
+
+.container-inputs-email-password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+}
+
+.container-img-input{
+    background-color: #E1E1E1;
+    width: 55px;
+    height: 37px;
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img-input img{
+    height: 30px;
+}
+
+.container-style-inputs{
+ display: flex;   
+ align-items: center;
+}
+
+.style-input-comun{
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+    text-align: start;
+}
+
+.button-login{
+    width: 90px;
+    height: 40px;
+    font-weight: 100;
+    font-size: larger;
+    background-color: #2F4050;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-login:hover{
+    background-color: #304457;
+}
+
+/* fin de los esilos inpust */
+
+
+
+
+@media (max-width:700px) {
+    .port-login-public{
+        display: none;
+    }
+    .modal-login-page-public{
+        width: 350px;
+    }
+
+    .container-inputs-public{
+        width: 100%;
+    }
+
+}

@@ -21,6 +21,10 @@ npm i react-router-dom
 npm install universal-cookie
 ```
 
+```
+npm install @mui/material
+```
+
 3. Run the server
 
 ```

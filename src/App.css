@@ -45,3 +45,8 @@ aside{
 p{
     margin: 0;
 }
+
+input{
+    border: none;
+    outline: none;
+}
