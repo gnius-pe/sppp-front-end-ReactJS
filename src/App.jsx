@@ -10,6 +10,7 @@ import {
   Navigate,
   NavLink,
 } from "react-router-dom";
+import PagePracticante from "./infrastructure/page/private/practicante/page-practicante/PagePracticante";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             </div>
           }
         ></Route>
-        <Route path="/practicante/*" element={<Practicante />}></Route>
+        <Route path="/practicante/*" element={<PagePracticante />}></Route>
       </Routes>
     </Router>
   );

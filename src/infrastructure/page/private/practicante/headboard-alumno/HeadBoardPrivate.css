@@ -1,0 +1,137 @@
+.header-style-practicante-private{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+.header-manipule-box{
+    background-color: #2C2C2C;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.title-style-private{
+    display: flex;
+    align-items: center;
+    height: 57px;
+    gap: 3px;
+}
+
+.title-head-private{
+    font-weight: 100;
+    padding-top: 10px;
+    margin-left: 26px;
+}
+
+.sub-tutle-head-private{
+    margin-left: 26px;
+    color: rgb(46, 46, 46);
+}
+
+.isotipo-img-ppp-private{
+    width: 30px;
+}
+
+.name-system-style-private{
+    font-size: 26px;
+    font-weight: 100;
+}
+.ubication-refence-detail-private{
+    background-color: #9e9e9e;
+    height: 70px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.274);
+}
+
+
+/* $########################################################## */
+
+.options-alumno-private{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.option-your-informtation img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+.long-box-option-alumno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.long-box-option-alumno img {
+    height: 20px;
+}
+
+
+.option-notifications-alumno{
+    transition: .4s;
+    cursor: pointer;
+}
+
+.option-progres-limit-alumno{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    align-items: center;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.option-progres-limit-alumno img {
+    height: 20px;
+    width: 20px;
+}
+
+.option-progres-limit-alumno:hover{
+    background-color: #9e9e9e;
+}
+
+.option-notifications-alumno img{
+    height: 20px;
+    width: 20px;
+    
+}
+
+.option-notifications-alumno:hover{
+    background-color: #9e9e9e;
+}
+
+.label-information{
+    color: white;
+}
+
+@media  (max-width:1130px) {
+    .label-information{
+        display: none;
+    }
+}
+
+.option-casita-alumno{
+    transition:  .4s;
+}
+
+.option-casita-alumno img {
+}
+
+.option-casita-alumno:hover{
+    background-color: #9e9e9e;
+}
