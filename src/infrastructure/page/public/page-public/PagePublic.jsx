@@ -10,7 +10,6 @@ function PagePublic() {
     <div className="foot-principal-public">
       <HeadBoardPublic/>
       <BodyPage/>
-      
       <FooterPage/>
     </div>
   );

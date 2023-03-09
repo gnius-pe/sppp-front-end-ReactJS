@@ -2,6 +2,7 @@ import React from "react";
 import "./menuPublic.css";
 import MenuPublicButton from "../../../../assets/icon-button/hamburger-menu.svg";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function MenuPublic() {
   const [butonMenu, setButonMenu] = useState(false);
@@ -39,7 +40,7 @@ function MenuPublic() {
           />
         </button>
         <ul className="list-option-menu-public">
-          <li>Reglamento PPP</li>
+          <li><NavLink to="/reglamento" onClick={handleActiveMenu}>Reglamento PPP</NavLink></li>
           <li>Documentos</li>
         </ul>
       </div>

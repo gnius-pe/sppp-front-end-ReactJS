@@ -55,7 +55,6 @@ function HeadBoardPublic() {
         <h2 className="title-head-public">Bienvenido !</h2>
         <p className="sub-tutle-head-public">/ sistema de Practicas Preprofesionales</p>
       </div>
-      
     </div>
   );
 }

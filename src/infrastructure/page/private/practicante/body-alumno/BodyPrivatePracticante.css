@@ -1,0 +1,149 @@
+.body-private-practicante {
+  position: relative;
+  background-color: #9e9e9ea8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ##########Datos del practicante############### */
+.date-practice-private {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+}
+
+@media  (max-width:1130px)  {
+    .date-practice-private{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+
+
+@media  (max-width:832px)  {
+    .date-practice-private{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .name-system-style-private{
+        display: none;
+    }
+}
+
+
+
+
+.date-practicante-private p{
+    font-size: 14px;
+}
+
+.information-practicante-private {
+  margin-top: 150px;
+  height: 350px;
+  width: 90%;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.information-practica-init {
+  margin-top: 25px;
+  background-color: #fafafa;
+  height: 350px;
+  width: 90%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.information-especific-private {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.line-punted {
+  height: 0px;
+  color: #9e9e9e;
+  width: 100%;
+  border: 1px dashed;
+}
+
+.line-status-practice {
+  height: 10px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e54444;
+}
+
+.date-practice-private img {
+  height: 200px;
+}
+
+@media  (max-width:700px)  {
+    .date-practice-private img{
+        height: 110px;
+        margin: 10px;
+    }
+
+    .date-practice-private{
+        display: flex;
+        flex-direction: column;
+    }
+    .date-practice-private{
+        padding: 0px;
+
+    }
+
+    .information-especific-private{
+        width: 80%;
+
+    }
+
+    .container-date-private{
+        font-size: 12px;
+    }
+
+    .line-punted{
+        width: 100%;
+        
+    }
+}
+
+
+.date-dinamic {
+  width: 170px;
+}
+
+.container-date-private{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ####################################### */
+
+.title-informacion-correction{
+    margin: 15px;
+}
+
+.correction-practicante{
+    margin: 15px;
+    display: none;
+}
+
+.correction-of-comision{
+    width: 99%;
+    height: 100px;
+}
+
+.corrections-details{
+    margin: 15px;
+    display: none;
+}

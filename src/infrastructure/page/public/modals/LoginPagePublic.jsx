@@ -13,7 +13,7 @@ function LoginPagePublic({ handleCloseModalLogin, stateModal  }) {
 
   const loginInSistem = () =>{
     //usar api de login
-    //navigate("/practicante/hi")
+    navigate("/practicante")
   }
   
   return (
